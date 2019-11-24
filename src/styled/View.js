@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-const size = ({width, height, minW, maxW, minH, maxH, lineH}) => `
-  ${ width ? `width: ${width}` : "" };
-  ${ height ? `height: ${height}` : "" };
+const size = ({w, h, minW, maxW, minH, maxH, lineH}) => `
+  ${ w ? `width: ${w}` : "" };
+  ${ h ? `height: ${h}` : "" };
   ${ minW ? `min-width: ${minW}` : "" };
   ${ maxW ? `max-width: ${maxW}` : "" };
   ${ minH ? `min-height: ${minH}` : "" };
@@ -10,9 +10,9 @@ const size = ({width, height, minW, maxW, minH, maxH, lineH}) => `
   ${ lineH ? `line-height: ${lineH}` : "" };
 `;
 
-const marginPadding = ({margin, padding}) => `
-  ${ margin ? `margin: ${margin}` : "" };
-  ${ padding ? `padding: ${padding}` : "" };
+const marginPadding = ({m, p}) => `
+  ${ m ? `margin: ${m}` : "" };
+  ${ p ? `padding: ${p}` : "" };
 `;
 
 const fonts = ({fontF, fontSize, fontW, fontStyle, fontStretch}) => `
@@ -48,12 +48,13 @@ const positions = ({position, top, right, bottom, left, float, zIndex}) => `
   ${ zIndex? `z-index: ${zIndex}` : "" }
 `;
 
-const border = ({border, borderW, borderT, borderB, borderStyle, captionS, borderColl, borderColor, borderSpac, emptyC,}) => `
+const border = ({border, borderW, borderT, borderB, borderStyle, borderR, captionS, borderColl, borderColor, borderSpac, emptyC,}) => `
   ${ border ? `border: ${border}` : "" };
   ${ borderW ? `border-width: ${borderW}` : "" };
   ${ borderT ? `border-top: ${borderT}` : "" };
   ${ borderB ? `border-bottom: ${borderB}` : "" };
   ${ borderStyle ? `border-style: ${borderStyle}` : "" };
+  ${ borderR ? `border-radius: ${borderR}` : "" };
   ${ captionS ? `caption-side: ${captionS}` : "" };
   ${ borderColl ? `border-collapse: ${borderColl}` : ""};
   ${ borderColor ? `border-color: ${borderColor}` : "" }

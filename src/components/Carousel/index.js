@@ -1,12 +1,19 @@
 import React from 'react';
-import './style.css';
+import styled from 'styled-components';
+import View from '../../styled/View';
+import cover1 from '../../assets/images/cover1.jpg';
+
+const Image=styled.img`
+    width: 100%;
+    height: 100vh;
+`;
 
 class Carousel extends React.Component{
     render(){
         return(
-            <div className='Carousel'>
-                
-            </div>
+            <View>
+                <Image src={cover1}/>
+            </View>
         )
     }
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import logoWhite from '../../assets/images/logoWhite.png';
-import facebook from '../../assets/images/facebook.png';
-import instagram from '../../assets/images/instagram.png';
+import fb from '../../assets/images/fb.png';
+import insta from '../../assets/images/insta.png';
 import View from '../../styled/View';
 
 const Logo=styled.img`
@@ -19,7 +19,7 @@ const Link=styled.a`
 class Header extends React.Component{
     render(){
         return(
-            <View flex alignI='center' justC='space-between' margin="0 auto" padding="15px 50px" bgColor='brown'>
+            <View flex alignI='center' justC='space-between' m="0 auto" p="15px 50px" bgColor='brown'>
                 <Logo className='logo' src={logoWhite}/>
                 <View flex alignI='center' justiC='space-between'>
                     <View><Link href='#'>About</Link></View>
@@ -27,8 +27,8 @@ class Header extends React.Component{
                     <View><Link href='#'>Contact</Link></View>
                 </View>
                 <View flex justC="space-between" alignI='center'>
-                    <View margin='15px' color='white'><img src={facebook}/></View>
-                    <View margin='15px' color='white'><img src={instagram}/></View>
+                    <View border='solid white 1px' borderR='100px' p='5px' m='10px' color='white'><img src={fb}/></View>
+                    <View border='solid white 1px' borderR='100px' p='5px' m='15px' color='white'><img src={insta}/></View>
                 </View>
             </View>
         )
