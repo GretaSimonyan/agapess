@@ -5,6 +5,8 @@ import new1 from '../../assets/images/new1.jpg';
 
 const Image=styled.img`
     width: 100%; 
+    border-bottom: solid 1px rgba(170,170,170,0.5);
+    border-top: solid 1px rgba(170,170,170,0.5);
 `;
 
 class NewColl extends React.Component{

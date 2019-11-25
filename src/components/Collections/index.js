@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import View from '../../styled/View';
-import Text from '../../styled/Text';
 import p1 from '../../assets/images/01.jpg';
 import p2 from '../../assets/images/02.jpg';
 import p3 from '../../assets/images/03.jpg';
@@ -14,8 +13,11 @@ import p9 from '../../assets/images/09.jpg';
 import p10 from '../../assets/images/010.jpg';
 
 const Image=styled.img`
-    // height: 490px;
     width: 100%; 
+    &:hover {
+        opacity: 0.8;
+        box-shadow: -1px -2px 25px 7px rgba(143,143,143,0.4);
+    }
 `;
 
 class Collections extends React.Component{
@@ -88,18 +90,18 @@ class Collections extends React.Component{
     }
     renderItem = () => (
         this.state.item.map( (item) => (
-            <View textAlign='center' w='350px' m='20px 10px' color='#61241e'>
+            <View textAlign='center' w='350px' m='20px 10px' color='#7D1D1E'>
                 <Image src={item.src}/>
-                <View fontSize='25px' fontW='700'> {item.title} </View>
+                <View fontSize='40px' fontW='700'> {item.title} </View>
                 <View fontSize='13px'> <a href='#'>{item.link}</a> </View>
             </View>
         ) )
     )
     render(){
         return(
-            <View p='40px'>
-                <View textAlign='center' fontSize='30px'>Collections</View>
-                <View flex flexW='wrap' justC='space-around'>
+            <View p='40px' borderT='solid 1px rgba(170,170,170,0.5)'>
+                <View textAlign='center' fontSize='45px'>Collections</View>
+                <View flex flexW='wrap' justC='center' m='20px 40px'>
                     {this.renderItem()}
                 </View>
             </View>

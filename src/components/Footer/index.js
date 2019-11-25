@@ -1,19 +1,14 @@
 import React from 'react';
-// import styled from 'styled-components';
 import View from '../../styled/View';
 import fb from '../../assets/images/fb.png';
 import insta from '../../assets/images/insta.png';
-
-// const Image=styled.img`
-//     // width: 100%; 
-// `;
 
 class Footer extends React.Component{
     render(){
         return(
             <View flex p='20px 70px' color='white' bgColor='#751f1e' justC='space-between' alignI='center'>
                 <View boxS='border-box'>
-                    <View boxS='border-box'>Adress:</View>
+                    <View boxS='border-box'>Address:</View>
                     <View boxS='border-box'>Phone:</View>
                     <View boxS='border-box'>E-mail:</View>
                 </View>
