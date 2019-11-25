@@ -2,6 +2,10 @@ import React from 'react';
 import Header from '../../components/Header';
 import Carousel from '../../components/Carousel';
 import AboutUs from '../../components/AboutUs';
+import Collections from '../../components/Collections';
+import NewColl from '../../components/NewColl';
+import Info from '../../components/Info';
+import Footer from '../../components/Footer';
 
 class Home extends React.Component{
     render(){
@@ -10,6 +14,10 @@ class Home extends React.Component{
                 <Header/>
                 <Carousel/>
                 <AboutUs/>
+                <Collections/>
+                <NewColl/>
+                <Info/>
+                <Footer/>
             </div>
         )
     }

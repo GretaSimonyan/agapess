@@ -48,7 +48,7 @@ const positions = ({position, top, right, bottom, left, float, z}) => `
   ${ z? `z-index: ${z}` : "" }
 `;
 
-const border = ({border, borderW, borderT, borderB, borderStyle, borderR, captionS, borderColl, borderColor, borderSpac, emptyC, boxS}) => `
+const border = ({border, borderW, borderT, borderB, borderStyle, borderR, captionS, borderColl, borderColor, borderSpac, emptyC}) => `
   ${ border ? `border: ${border}` : "" };
   ${ borderW ? `border-width: ${borderW}` : "" };
   ${ borderT ? `border-top: ${borderT}` : "" };
@@ -60,7 +60,6 @@ const border = ({border, borderW, borderT, borderB, borderStyle, borderR, captio
   ${ borderColor ? `border-color: ${borderColor}` : "" }
   ${ borderSpac? `border-spacing: ${borderSpac}` : "" };
   ${ emptyC ? `empty-cells: ${emptyC}` : "" };
-  ${ boxS ? `box-sizing: ${boxS}` : "" };
 `;
 
 const backgrounds = ({bg, bgImg, bgPos, bgRep, bgSize, bgColor, bgClip, bgOr, bgAt}) => `
@@ -90,6 +89,12 @@ const flexBox = ({flex, flexD, flexW, flexF, flexG, flexS, flexB, order, justC, 
   ${ alignC ? `align-content: ${alignC}` : "" }
 `;
 
+const other =({boxS, overflow, color}) =>`
+  ${ boxS ? `box-sizing: ${boxS}` : "" };
+  ${ overflow ? `overflow : ${overflow}` : "" };
+  ${ color ? `color: ${color}` : "" };
+`;
+
 const View = styled.div `
   ${ size }
   ${ fonts }
@@ -99,6 +104,7 @@ const View = styled.div `
   ${ backgrounds }
   ${ flexBox }
   ${ border }
+  ${ other }
 `;
 
 export default View;
