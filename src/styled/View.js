@@ -38,17 +38,17 @@ const text = ({textTf, whiteSpace, tabSize, lineBreak, overflowWrap, textAlign, 
   ${ textUP ? `text-underline-position: ${textUP}` : "" };
 `;
 
-const positions = ({position, top, right, bottom, left, float, zIndex}) => `
+const positions = ({position, top, right, bottom, left, float, z}) => `
   ${ position ? `position: ${position}` : "" };
   ${ top ? `top: ${top}` : "" };
   ${ right ? `right: ${right}` : "" };
   ${ bottom ? `bottom: ${bottom}` : "" };
   ${ left ? `left: ${left}` : "" };
   ${ float ? `float: ${float}` : "" };
-  ${ zIndex? `z-index: ${zIndex}` : "" }
+  ${ z? `z-index: ${z}` : "" }
 `;
 
-const border = ({border, borderW, borderT, borderB, borderStyle, borderR, captionS, borderColl, borderColor, borderSpac, emptyC,}) => `
+const border = ({border, borderW, borderT, borderB, borderStyle, borderR, captionS, borderColl, borderColor, borderSpac, emptyC, boxS}) => `
   ${ border ? `border: ${border}` : "" };
   ${ borderW ? `border-width: ${borderW}` : "" };
   ${ borderT ? `border-top: ${borderT}` : "" };
@@ -59,7 +59,8 @@ const border = ({border, borderW, borderT, borderB, borderStyle, borderR, captio
   ${ borderColl ? `border-collapse: ${borderColl}` : ""};
   ${ borderColor ? `border-color: ${borderColor}` : "" }
   ${ borderSpac? `border-spacing: ${borderSpac}` : "" };
-  ${ emptyC ? `empty-cells: ${emptyC}` : "" }
+  ${ emptyC ? `empty-cells: ${emptyC}` : "" };
+  ${ boxS ? `box-sizing: ${boxS}` : "" };
 `;
 
 const backgrounds = ({bg, bgImg, bgPos, bgRep, bgSize, bgColor, bgClip, bgOr, bgAt}) => `
