@@ -38,14 +38,14 @@ const text = ({textTf, whiteSpace, tabSize, lineBreak, overflowWrap, textAlign, 
   ${ textUP ? `text-underline-position: ${textUP}` : "" };
 `;
 
-const positions = ({position, top, right, bottom, left, float, zIndex}) => `
+const positions = ({position, top, right, bottom, left, float, z}) => `
   ${ position ? `position: ${position}` : "" };
   ${ top ? `top: ${top}` : "" };
   ${ right ? `right: ${right}` : "" };
   ${ bottom ? `bottom: ${bottom}` : "" };
   ${ left ? `left: ${left}` : "" };
   ${ float ? `float: ${float}` : "" };
-  ${ zIndex? `z-index: ${zIndex}` : "" }
+  ${ z? `z-index: ${z}` : "" }
 `;
 
 const border = ({border, borderW, borderT, borderB, borderStyle, borderR, captionS, borderColl, borderColor, borderSpac, emptyC,}) => `
@@ -74,21 +74,6 @@ const backgrounds = ({bg, bgImg, bgPos, bgRep, bgSize, bgColor, bgClip, bgOr, bg
   ${ bgAt ? `background-attachment: ${bgAt}` : "" };
 `;
 
-const flexBox = ({flex, flexD, flexW, flexF, flexG, flexS, flexB, order, justC, alignI, alignS, alignC}) => `
-  ${ flex ? `display: flex` : "" };
-  ${ flexD ? `flex-direction: ${flexD}` : "" };
-  ${ flexW ? `flex-wrap: ${flexW}` : "" };
-  ${ flexF ? `flex-flow: ${flexF}` : "" };
-  ${ flexG ? `flex-grow: ${flexG}` : "" };
-  ${ flexS ? `flex-shrink: ${flexS}` : "" };
-  ${ flexB ? `flex-basis: ${flexB}` : "" };
-  ${ order ? `order: ${order}` : "" };
-  ${ justC ? `justify-content: ${justC}` : "" };
-  ${ alignI ? `align-items: ${alignI}` : "" };
-  ${ alignS ? `align-self: ${alignS}` : "" };
-  ${ alignC ? `align-content: ${alignC}` : "" }
-`;
-
 const Text = styled.span `
   ${ size }
   ${ fonts }
@@ -96,7 +81,6 @@ const Text = styled.span `
   ${ marginPadding }
   ${ positions }
   ${ backgrounds }
-  ${ flexBox }
   ${ border }
 `;
 
