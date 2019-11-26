@@ -3,7 +3,10 @@ import styled from 'styled-components';
 import logoWhite from '../../assets/images/logoWhite.png';
 import fb from '../../assets/images/fb.png';
 import insta from '../../assets/images/insta.png';
-import View from '../../styled/View';
+
+import {
+    View,
+} from '../../styled';
 
 const Logo=styled.img`
     width: 130px;

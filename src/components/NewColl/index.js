@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import View from '../../styled/View';
+
+import {
+    View,
+} from '../../styled';
+
 import new1 from '../../assets/images/new1.jpg';
 
 const Image=styled.img`

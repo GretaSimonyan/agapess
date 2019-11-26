@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import View from '../../styled/View';
+import {
+    View,
+} from '../../styled';
 import cover1 from '../../assets/images/cover1.jpg';
 import cover2 from '../../assets/images/cover2.jpg';
 import cover3 from '../../assets/images/cover3.jpg';

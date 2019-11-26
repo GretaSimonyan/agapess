@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import View from '../../styled/View';
+
+import {
+    View,
+} from '../../styled';
+
 import p1 from '../../assets/images/01.jpg';
 import p2 from '../../assets/images/02.jpg';
 import p3 from '../../assets/images/03.jpg';

@@ -1,5 +1,9 @@
 import React from 'react';
-import View from '../../styled/View';
+
+import {
+    View,
+} from '../../styled';
+
 import fb from '../../assets/images/fb.png';
 import insta from '../../assets/images/insta.png';
 

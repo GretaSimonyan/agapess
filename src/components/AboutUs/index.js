@@ -1,6 +1,10 @@
 import React from 'react';
-import View from '../../styled/View';
-import Text from '../../styled/Text';
+
+import {
+    View,
+    Text,
+} from '../../styled';
+
 import about1 from '../../assets/images/about1.jpg';
 
 class AboutUs extends React.Component{

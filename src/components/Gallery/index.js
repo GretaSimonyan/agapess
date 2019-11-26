@@ -1,5 +1,9 @@
 import React from 'react';
-import View from '../../styled/View';
+
+import {
+    View,
+} from '../../styled';
+
 import gal1 from '../../assets/images/gal1.jpg';
 
 class Gallery extends React.Component{
