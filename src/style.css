@@ -1,3 +1,14 @@
 body{
     margin: 0;
+    background-color: rgba(240, 248, 255, 0.746);
+    background-image: url('http://pve.su/example/sn2.png'), url('./assets/images/snow.png'), url('http://pve.su/example/sn3.png');
+    animation: snow 15s linear infinite;
+}
+@keyframes snow {
+    0% {
+      background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    100% {
+      background-position: -100px 900px, 400px 400px, 200px 200px;
+    }
 }

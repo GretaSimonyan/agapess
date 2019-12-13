@@ -21,7 +21,7 @@ const Link=styled.a`
 class Header extends React.Component{
     render(){
         return(
-            <View flex z='99' boxS='border-box' position='fixed' alignI='center' justC='space-between' m="0 auto" w='100%' p="20px 70px" bgColor='#751f1e'>
+            <View flex z='99' boxS='border-box' pos='fixed' alignI='center' justC='space-between' m="0 auto" w='100%' p="20px 70px" bgColor='#751f1e'>
                 <View><a href='#'><Logo src={logoWhite}/></a></View>
                 <View flex >
                     <View><Link href='#'>About</Link></View>

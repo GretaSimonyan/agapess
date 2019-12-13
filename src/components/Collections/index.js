@@ -94,7 +94,7 @@ class Collections extends React.Component{
     }
     renderItem = () => (
         this.state.item.map( (item) => (
-            <View textAlign='center' w='350px' m='20px 10px' color='#7D1D1E'>
+            <View tAlign='center' w='350px' m='20px 10px' c='#7D1D1E'>
                 <Image src={item.src}/>
                 <View fontSize='40px' fontW='700'> {item.title} </View>
                 <View fontSize='13px'> <a href='#'>{item.link}</a> </View>
@@ -103,9 +103,9 @@ class Collections extends React.Component{
     )
     render(){
         return(
-            <View p='40px' borderT='solid 1px rgba(170,170,170,0.5)'>
-                <View textAlign='center' fontSize='45px'>Collections</View>
-                <View flex flexW='wrap' justC='center' m='20px 40px'>
+            <View p='40px' bT='solid 1px rgba(170,170,170,0.5)'>
+                <View tAlign='center' fontSize='45px'>Collections</View>
+                <View flex fW='wrap' justC='center' m='20px 40px'>
                     {this.renderItem()}
                 </View>
             </View>

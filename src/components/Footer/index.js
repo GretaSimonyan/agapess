@@ -10,13 +10,13 @@ import insta from '../../assets/images/insta.png';
 class Footer extends React.Component{
     render(){
         return(
-            <View flex p='20px 70px' color='white' bgColor='#751f1e' justC='space-between' alignI='center'>
+            <View flex p='20px 70px' c='white' bgColor='#751f1e' justC='space-between' alignI='center'>
                 <View boxS='border-box'>
                     <View boxS='border-box'>Address:</View>
                     <View boxS='border-box'>Phone:</View>
                     <View boxS='border-box'>E-mail:</View>
                 </View>
-                <View textAlign='center' fontSize='20px' letter-spacing='3px'>
+                <View tAlign='center' fontSize='20px' lsp='3px'>
                     <View>HANDMADE COLLECTION</View>
                     <View>by Astghik Sahakyan</View>
                 </View>
