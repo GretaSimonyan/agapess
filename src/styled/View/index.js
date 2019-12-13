@@ -100,7 +100,7 @@ const flexBox = ({flex, f, fD, fW, fF, fG, fSh, fB, order, justC, alignI, alignS
   ${ alignC ? `align-content: ${alignC}` : "" }
 `;
 
-const other =({boxS, boxSh, overflow, c, op, tr}) =>`
+const other =({boxS, boxSh, overflow, c, op, tr, lsp}) =>`
   ${ boxS ? `box-sizing: ${boxS}` : "" };
   ${ boxSh ? `box-shadow: ${boxSh}` : "" };
   ${ overflow ? `overflow : ${overflow}` : "" };
