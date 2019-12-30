@@ -13,12 +13,11 @@ const ByA = styled.img`
     margin: 20px 0;
     width: 220px;
     height: 40px;
-    
 `;
 
 function AboutUs(){
     return(
-        <View flex alignI='center' justC='flex-start' bgColor='#ffb5b2'  h='100vh'>
+        <View flex alignI='center' justC='flex-start' bgColor='#ffb5b2' h='100vh'>
             <img src={red}/>
             <View flex w='50%' fD='column' mL='10%' >
                 <Text fontSize='30px' m='0 auto'><h1>About Us</h1></Text>

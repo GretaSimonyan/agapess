@@ -1,11 +1,22 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import {
     View,
 } from '../../styled';
 
-import fb from '../../assets/images/fb.png';
-import insta from '../../assets/images/insta.png';
+import {TiSocialFacebookCircular,TiSocialInstagramCircular} from "react-icons/ti";
+
+const SocialLink = styled.a`
+    text-decoration: none;
+    color: white;
+`;
+const Fb = styled(TiSocialFacebookCircular)`
+    font-size: 30px;
+`;
+const Insta = styled(TiSocialInstagramCircular)`
+    font-size: 30px;
+`;
 
 function Footer(){
     return(
@@ -20,8 +31,16 @@ function Footer(){
                 <View>by Astghik Sahakyan</View>
             </View>
             <View flex justC="space-between" alignI='center'>
-                <View w='20px' m='0 5px'><a href='#'><img src={fb}/></a></View>
-                <View w='20px' m='0 5px'><a href='#'><img src={insta}/></a></View>
+                <View w='20px' m='10px' color='white'>
+                    <SocialLink href='#'>
+                        <Fb/>
+                    </SocialLink>
+                </View>
+                <View w='20px' m='10px' color='white'>
+                    <SocialLink href='#'>
+                        <Insta/>
+                    </SocialLink>
+                </View>
             </View>
         </View>
     )

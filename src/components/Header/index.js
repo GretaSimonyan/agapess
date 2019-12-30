@@ -1,21 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
 import logoWhite from '../../assets/images/logoWhite.png';
-import fb from '../../assets/images/fb.png';
-import insta from '../../assets/images/insta.png';
+
+import {TiSocialFacebookCircular,TiSocialInstagramCircular} from "react-icons/ti";
 
 import {
     View,
 } from '../../styled';
 
-const Logo=styled.img`
-    width: 130px;
+const Logo = styled.img`
+    width: 200px;
 `;
-const Link=styled.a`
+const Link = styled.a`
     margin: 15px;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
+`;
+const SocialLink = styled.a`
+    text-decoration: none;
+    color: white;
+`;
+const Fb = styled(TiSocialFacebookCircular)`
+    font-size: 30px;
+`;
+const Insta = styled(TiSocialInstagramCircular)`
+    font-size: 30px;
 `;
 
 class Header extends React.Component{
@@ -29,8 +39,16 @@ class Header extends React.Component{
                     <View><Link href='#'>Contact</Link></View>
                 </View>
                 <View flex justC="space-between" alignI='center'>
-                    <View w='20px' m='10px' color='white'><a href='#'><img src={fb}/></a></View>
-                    <View w='20px' m='10px' color='white'><a href='#'><img src={insta}/></a></View>
+                    <View w='20px' m='10px' color='white'>
+                        <SocialLink href='#'>
+                            <Fb/>
+                        </SocialLink>
+                    </View>
+                    <View w='20px' m='10px' color='white'>
+                        <SocialLink href='#'>
+                            <Insta/>
+                        </SocialLink>
+                    </View>
                 </View>
             </View>
         )
