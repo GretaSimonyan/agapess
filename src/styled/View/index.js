@@ -100,14 +100,13 @@ const flexBox = ({flex, f, fD, fW, fF, fG, fSh, fB, order, justC, alignI, alignS
   ${ alignC ? `align-content: ${alignC}` : "" }
 `;
 
-const other =({boxS, boxSh, overflow, c, op, tr, lsp}) =>`
+const other =({boxS, boxSh, overflow, c, op, tr}) =>`
   ${ boxS ? `box-sizing: ${boxS}` : "" };
   ${ boxSh ? `box-shadow: ${boxSh}` : "" };
   ${ overflow ? `overflow : ${overflow}` : "" };
   ${ c ? `color: ${c}` : "" };
   ${ op ? `opacity: ${op}` : "" };
   ${ tr ? `transition: ${tr}` : "" };
-  ${ lsp ? `letter-spacing: ${lsp}` : "" };
 `;
 
 const View = styled.div `

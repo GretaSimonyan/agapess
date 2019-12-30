@@ -5,22 +5,20 @@ import {
     View,
 } from '../../styled';
 
-import new1 from '../../assets/images/new1.jpg';
+import newcollection from '../../assets/images/newcollection.jpg';
 
-const Image=styled.img`
+const Image = styled.img`
     width: 100%; 
     border-bottom: solid 1px rgba(170,170,170,0.5);
     border-top: solid 1px rgba(170,170,170,0.5);
 `;
 
-class NewColl extends React.Component{
-    render(){
-        return(
-            <View>
-                <Image src={new1}/>
-            </View>
-        )
-    }
+function NewColl(){
+    return(
+        <View>
+            <Image src={newcollection}/>
+        </View>
+    )
 }
 
 export default NewColl;

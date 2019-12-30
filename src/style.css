@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  background-color: rgba(241, 247, 251, 0.534);
+  /* background-color: rgba(241, 247, 251, 0.534); */
   background-image: url('./assets/images/big_snow.png'), url('./assets/images/snow.png'), url('./assets/images/snow_b.png');
   animation: snow 15s linear infinite;
 }

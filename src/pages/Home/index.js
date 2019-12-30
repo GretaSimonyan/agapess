@@ -5,8 +5,8 @@ import {
     AboutUs,
     Collections,
     NewColl,
-    Gallery,
     Info,
+    Gallery,
     Footer,
 } from '../../components';
 
@@ -18,8 +18,8 @@ function Home() {
             <AboutUs/>
             <Collections/>
             <NewColl/>
-            <Gallery/>
             <Info/>
+            <Gallery/>
             <Footer/>
         </div>
     )
