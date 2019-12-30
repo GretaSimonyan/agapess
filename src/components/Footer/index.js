@@ -10,12 +10,12 @@ import insta from '../../assets/images/insta.png';
 function Footer(){
     return(
         <View flex p='20px 70px' c='white' bgColor='#ff706a' justC='space-between' alignI='center'>
-            <View boxS='border-box'>
+            <View boxS='border-box' fontSize='18px'>
                 <View boxS='border-box'>Address:</View>
                 <View boxS='border-box'>Phone:</View>
                 <View boxS='border-box'>E-mail:</View>
             </View>
-            <View tAlign='center' fontSize='20px' lsp='3px'>
+            <View tAlign='center' fontSize='25px' lsp='3px'>
                 <View>HANDMADE COLLECTION</View>
                 <View>by Astghik Sahakyan</View>
             </View>
