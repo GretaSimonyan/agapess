@@ -1,31 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ebcef2d56583fe7254f3da3a08b28cc5",
+    "revision": "a87407e355db8800b225fe8d6eeca7a5",
     "url": "/agapess/index.html"
   },
   {
-    "revision": "2859f1380d66ce30234e",
+    "revision": "742ca97518ae9dc55dd2",
     "url": "/agapess/static/css/2.588d4d09.chunk.css"
   },
   {
-    "revision": "0ec232a266dcee5bca48",
-    "url": "/agapess/static/css/main.2ad3bc24.chunk.css"
+    "revision": "c4c24681aa2da5cbc9b1",
+    "url": "/agapess/static/css/main.d8a32d07.chunk.css"
   },
   {
-    "revision": "2859f1380d66ce30234e",
-    "url": "/agapess/static/js/2.aafbfa89.chunk.js"
+    "revision": "742ca97518ae9dc55dd2",
+    "url": "/agapess/static/js/2.29dd469e.chunk.js"
   },
   {
-    "revision": "0ec232a266dcee5bca48",
-    "url": "/agapess/static/js/main.08c36633.chunk.js"
+    "revision": "c4c24681aa2da5cbc9b1",
+    "url": "/agapess/static/js/main.ef1c326f.chunk.js"
   },
   {
     "revision": "1c3012d7090b67912195",
     "url": "/agapess/static/js/runtime-main.1b5d4f38.js"
-  },
-  {
-    "revision": "b9b64ffe2fccaba602bc1cbdea54fa2f",
-    "url": "/agapess/static/media/big_snow.b9b64ffe.png"
   },
   {
     "revision": "ddbbba1ef58508be43fd8f1b5204257e",
@@ -114,14 +110,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f97e3bbf73254b0112091d0192f17aec",
     "url": "/agapess/static/media/slick.f97e3bbf.svg"
-  },
-  {
-    "revision": "b5e550f73aa370702de8cfd86d751522",
-    "url": "/agapess/static/media/snow.b5e550f7.png"
-  },
-  {
-    "revision": "791c17187972f9da21bea039c7ea12d9",
-    "url": "/agapess/static/media/snow_b.791c1718.png"
   },
   {
     "revision": "c966c6c3065d72a766bc96440b0cbcbd",
