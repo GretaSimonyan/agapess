@@ -12,11 +12,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Image=styled.img`
-    width: 100%;
-    height: 100vh;
-`;
-
 class Carousel extends React.Component{
     render(){
         let settings = {
@@ -29,18 +24,11 @@ class Carousel extends React.Component{
         return(
             <View overflow='hidden'>
                 <Slider {...settings}>
-                    <View>
-                        <Image src={cover1}/>
-                    </View>
-                    <View>
-                        <Image src={cover2}/>
-                    </View>
-                    <View>
-                        <Image src={cover3}/>
-                    </View>
+                    <View bgImg={cover1} w='100%' h='100vh' bgSize='cover'/>
+                    <View bgImg={cover2} w='100%' h='100vh' bgSize='cover'/>
+                    <View bgImg={cover3} w='100%' h='100vh' bgSize='cover'/>
                 </Slider> 
             </View>
-            
         )
     }
 }
