@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/agapess/static/css/main.d8a32d07.chunk.css",
-    "main.js": "/agapess/static/js/main.2c88b9ae.chunk.js",
-    "main.js.map": "/agapess/static/js/main.2c88b9ae.chunk.js.map",
+    "main.js": "/agapess/static/js/main.a8e1698e.chunk.js",
+    "main.js.map": "/agapess/static/js/main.a8e1698e.chunk.js.map",
     "runtime-main.js": "/agapess/static/js/runtime-main.1b5d4f38.js",
     "runtime-main.js.map": "/agapess/static/js/runtime-main.1b5d4f38.js.map",
-    "static/css/2.2b05c17f.chunk.css": "/agapess/static/css/2.2b05c17f.chunk.css",
-    "static/js/2.8a825bd7.chunk.js": "/agapess/static/js/2.8a825bd7.chunk.js",
-    "static/js/2.8a825bd7.chunk.js.map": "/agapess/static/js/2.8a825bd7.chunk.js.map",
+    "static/css/2.588d4d09.chunk.css": "/agapess/static/css/2.588d4d09.chunk.css",
+    "static/js/2.64f71bb4.chunk.js": "/agapess/static/js/2.64f71bb4.chunk.js",
+    "static/js/2.64f71bb4.chunk.js.map": "/agapess/static/js/2.64f71bb4.chunk.js.map",
     "index.html": "/agapess/index.html",
-    "precache-manifest.a55beb43a188f76d784b99ab80c996c3.js": "/agapess/precache-manifest.a55beb43a188f76d784b99ab80c996c3.js",
+    "precache-manifest.ab20ed6c3b2b7e0036b726fb7fc56483.js": "/agapess/precache-manifest.ab20ed6c3b2b7e0036b726fb7fc56483.js",
     "service-worker.js": "/agapess/service-worker.js",
-    "static/css/2.2b05c17f.chunk.css.map": "/agapess/static/css/2.2b05c17f.chunk.css.map",
+    "static/css/2.588d4d09.chunk.css.map": "/agapess/static/css/2.588d4d09.chunk.css.map",
     "static/css/main.d8a32d07.chunk.css.map": "/agapess/static/css/main.d8a32d07.chunk.css.map",
     "static/media/byAstghik.png": "/agapess/static/media/byAstghik.ddbbba1e.png",
     "static/media/col1.jpg": "/agapess/static/media/col1.6727bf00.jpg",
@@ -30,15 +30,15 @@
     "static/media/logoWhite.png": "/agapess/static/media/logoWhite.d835e3d4.png",
     "static/media/newcollection.jpg": "/agapess/static/media/newcollection.d13f83f9.jpg",
     "static/media/photo1.jpg": "/agapess/static/media/photo1.b0cd588d.jpg",
-    "static/media/red.jpg": "/agapess/static/media/red.178eada3.jpg",
+    "static/media/red.png": "/agapess/static/media/red.e4605f43.png",
     "static/media/slick-theme.css": "/agapess/static/media/slick.f97e3bbf.svg",
     "static/media/tel.jpg": "/agapess/static/media/tel.c966c6c3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.1b5d4f38.js",
-    "static/css/2.2b05c17f.chunk.css",
-    "static/js/2.8a825bd7.chunk.js",
+    "static/css/2.588d4d09.chunk.css",
+    "static/js/2.64f71bb4.chunk.js",
     "static/css/main.d8a32d07.chunk.css",
-    "static/js/main.2c88b9ae.chunk.js"
+    "static/js/main.a8e1698e.chunk.js"
   ]
 }
