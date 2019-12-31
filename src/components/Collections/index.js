@@ -103,9 +103,9 @@ class Collections extends React.Component{
     )
     render(){
         return(
-            <View  bT='solid 1px rgba(170,170,170,0.5)'>
+            <View id='collections' p='100px 0' bT='solid 1px rgba(170,170,170,0.5)'>
                 <View tAlign='center' fontSize='45px' op='0.5'>Collections</View>
-                <View flex fW='wrap' justC='center' m='0px 200px'>
+                <View flex fW='wrap' justC='center' m='0px 100px'>
                     {this.renderItem()}
                 </View>
             </View>

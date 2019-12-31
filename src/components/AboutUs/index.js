@@ -17,8 +17,8 @@ const ByA = styled.img`
 
 function AboutUs(){
     return(
-        <View flex fD='row' alignI='center' justC='flex-start' bgColor='#ffb5b2' p='70px 0'>
-            <img src={red}/>
+        <View id="about" flex fD='row' alignI='center' justC='flex-start' bgColor='#ffb5b2' p='120px 0'>
+            <img src={red} alt='red'/>
             <View flex w='50%' fD='column' mL='10%' >
                 <Text fontSize='30px' m='0 auto'><h1>About Us</h1></Text>
                 <Text fontSize='18px' lh='2'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -29,7 +29,7 @@ function AboutUs(){
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                 It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </Text>
-                <View flex justC='flex-end'><ByA src={byAstghik}/></View>
+                <View flex justC='flex-end'><ByA src={byAstghik} alt='byAstghik'/></View>
             </View>
         </View>
     )

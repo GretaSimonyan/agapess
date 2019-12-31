@@ -20,7 +20,7 @@ const Insta = styled(TiSocialInstagramCircular)`
 
 function Footer(){
     return(
-        <View flex p='20px 70px' c='white' bgColor='#ff706a' justC='space-between' alignI='center'>
+        <View id='contact' flex p='20px 70px' c='white' bgColor='#ff706a' justC='space-between' alignI='center'>
             <View boxS='border-box' fontSize='18px'>
                 <View boxS='border-box'>Address:</View>
                 <View boxS='border-box'>Phone:</View>

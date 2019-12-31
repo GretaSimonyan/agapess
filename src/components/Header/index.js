@@ -34,9 +34,9 @@ class Header extends React.Component{
             <View flex z='99' boxS='border-box' pos='fixed' alignI='center' justC='space-between' m="0 auto" w='100%' p="20px 70px" bgColor='#ff706a'>
                 <View><a href='#'><Logo src={logoWhite}/></a></View>
                 <View flex >
-                    <View><Link href='#'>About</Link></View>
-                    <View><Link href='#'>Collections</Link></View>
-                    <View><Link href='#'>Contact</Link></View>
+                    <View><Link href='#about'>About</Link></View>
+                    <View><Link href='#collections'>Collections</Link></View>
+                    <View><Link href='#contact'>Contact</Link></View>
                 </View>
                 <View flex justC="space-between" alignI='center'>
                     <View w='20px' m='10px' color='white'>
