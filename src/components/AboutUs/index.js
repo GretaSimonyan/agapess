@@ -6,7 +6,7 @@ import {
     Text,
 } from '../../styled';
 
-import red from '../../assets/images/red.jpg';
+import red from '../../assets/images/red.png';
 import byAstghik from '../../assets/images/byAstghik.png';
 
 const ByA = styled.img`
@@ -17,7 +17,7 @@ const ByA = styled.img`
 
 function AboutUs(){
     return(
-        <View flex alignI='center' justC='flex-start' bgColor='#ffb5b2' h='100vh'>
+        <View flex fD='row' alignI='center' justC='flex-start' bgColor='#ffb5b2' p='70px 0'>
             <img src={red}/>
             <View flex w='50%' fD='column' mL='10%' >
                 <Text fontSize='30px' m='0 auto'><h1>About Us</h1></Text>
