@@ -21,14 +21,7 @@ function AboutUs(){
             <img src={red} alt='red'/>
             <View flex w='50%' fD='column' mL='10%' >
                 <Text fontSize='30px' m='0 auto'><h1>About Us</h1></Text>
-                <Text fontSize='18px' lh='2'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br/>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </Text>
+                <Text fontSize='18px' lh='2'>We are happy to introduce our new brand, named Studios 21 after ArtStar Illusions which was found by Astghik Sahakyan in 1980 in Yerevan, Armenia. In 1980 the journey become since today.  As you can see our company is almost 40 years  old.  Our handmade crafts are only made of qualified yarn from 15-95% wool and we also use 100% acryl. Astghik was just 16 years old when she started knitting and selling her piece of arts in studios and clothing boutiques. She introduced her knittings all over the world, Russia, Germany, France, Italy, Yugoslavia, Czech Republic, Austria, Ukraine and most of the part of the USA( California, Las Vegas, New York, Pennsylvania). She presents the nations her wonderful knitted stuff which are cardigans, blouses, panchos, scarfs, dresses, coats etc, anything that can be knitted. We have shared our works through Armenia, most of Europe and America and that’s just the beginning of our journey. Lot’s of new places are on the way to come. For More information and business inquiries you can contact us at Studios21@yahoo.com. </Text>
                 <View flex justC='flex-end'><ByA src={byAstghik} alt='byAstghik'/></View>
             </View>
         </View>
