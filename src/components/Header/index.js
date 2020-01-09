@@ -32,7 +32,7 @@ class Header extends React.Component{
     render(){
         return(
             <View flex z='99' boxS='border-box' pos='fixed' alignI='center' justC='space-between' m="0 auto" w='100%' p="20px 70px" bgColor='#ff706a'>
-                <View><a href='#'><Logo src={logoWhite}/></a></View>
+                <View><a href='/'><Logo src={logoWhite}/></a></View>
                 <View flex >
                     <View><Link href='#about'>About</Link></View>
                     <View><Link href='#collections'>Collections</Link></View>
