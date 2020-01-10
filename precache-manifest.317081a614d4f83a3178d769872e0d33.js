@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eefd196e806bb0f6bfe8b3b5db0d6ac6",
+    "revision": "6007fbc00800cf7d1b5199578d08d654",
     "url": "/agapess/index.html"
   },
   {
-    "revision": "ea4910c580ae7457bddf",
+    "revision": "07d069e11290a54eac2d",
     "url": "/agapess/static/css/2.2b05c17f.chunk.css"
   },
   {
-    "revision": "a460d18cc9eb6173004f",
+    "revision": "802b730b3c04b67b0d81",
     "url": "/agapess/static/css/main.d8a32d07.chunk.css"
   },
   {
-    "revision": "ea4910c580ae7457bddf",
-    "url": "/agapess/static/js/2.ef34c025.chunk.js"
+    "revision": "07d069e11290a54eac2d",
+    "url": "/agapess/static/js/2.438fd193.chunk.js"
   },
   {
-    "revision": "a460d18cc9eb6173004f",
-    "url": "/agapess/static/js/main.d223513a.chunk.js"
+    "revision": "802b730b3c04b67b0d81",
+    "url": "/agapess/static/js/main.097912d7.chunk.js"
   },
   {
     "revision": "1c3012d7090b67912195",
     "url": "/agapess/static/js/runtime-main.1b5d4f38.js"
+  },
+  {
+    "revision": "afb50701726581f5f817faab8f7cf1b7",
+    "url": "/agapess/static/media/Arvo-Regular.afb50701.ttf"
   },
   {
     "revision": "ddbbba1ef58508be43fd8f1b5204257e",
