@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/agapess/static/css/main.d8a32d07.chunk.css",
-    "main.js": "/agapess/static/js/main.c8fcc09c.chunk.js",
-    "main.js.map": "/agapess/static/js/main.c8fcc09c.chunk.js.map",
+    "main.js": "/agapess/static/js/main.9944bba9.chunk.js",
+    "main.js.map": "/agapess/static/js/main.9944bba9.chunk.js.map",
     "runtime-main.js": "/agapess/static/js/runtime-main.1b5d4f38.js",
     "runtime-main.js.map": "/agapess/static/js/runtime-main.1b5d4f38.js.map",
     "static/css/2.2b05c17f.chunk.css": "/agapess/static/css/2.2b05c17f.chunk.css",
-    "static/js/2.f1940466.chunk.js": "/agapess/static/js/2.f1940466.chunk.js",
-    "static/js/2.f1940466.chunk.js.map": "/agapess/static/js/2.f1940466.chunk.js.map",
+    "static/js/2.bce34ef1.chunk.js": "/agapess/static/js/2.bce34ef1.chunk.js",
+    "static/js/2.bce34ef1.chunk.js.map": "/agapess/static/js/2.bce34ef1.chunk.js.map",
     "index.html": "/agapess/index.html",
-    "precache-manifest.6673c7ee86c6faf7ea00dd8e59535adb.js": "/agapess/precache-manifest.6673c7ee86c6faf7ea00dd8e59535adb.js",
+    "precache-manifest.0995b6b07e989a5bbbc558325b4ec991.js": "/agapess/precache-manifest.0995b6b07e989a5bbbc558325b4ec991.js",
     "service-worker.js": "/agapess/service-worker.js",
     "static/css/2.2b05c17f.chunk.css.map": "/agapess/static/css/2.2b05c17f.chunk.css.map",
     "static/css/main.d8a32d07.chunk.css.map": "/agapess/static/css/main.d8a32d07.chunk.css.map",
@@ -37,8 +37,8 @@
   "entrypoints": [
     "static/js/runtime-main.1b5d4f38.js",
     "static/css/2.2b05c17f.chunk.css",
-    "static/js/2.f1940466.chunk.js",
+    "static/js/2.bce34ef1.chunk.js",
     "static/css/main.d8a32d07.chunk.css",
-    "static/js/main.c8fcc09c.chunk.js"
+    "static/js/main.9944bba9.chunk.js"
   ]
 }
