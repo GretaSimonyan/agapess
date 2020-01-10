@@ -1,6 +1,6 @@
 import React from 'react';
 // import styled from 'styled-components';
-import { Route, NavLink } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 // import CollextionIntro from '../../pages/CollextionIntro';
 
 import {
@@ -25,10 +25,6 @@ import p10 from '../../assets/images/col10.jpg';
 //         opacity: 0.9;
 //         box-shadow: -1px -2px 25px 7px rgba(143,143,143,0.4);
 //     }
-// `;
-
-// const Link = styled.a`
-//     display: block;
 // `;
 
 class Collections extends React.Component{
@@ -101,14 +97,16 @@ class Collections extends React.Component{
     }
     renderItem = () => (
         this.state.item.map( (item, id) => (
-            <View key={id} flex alignI='flex-end' justC='center' bgImg={item.src} w='350px' h='538px' m='20px 10px'>
-                <View  flex justC='center' bgColor='rgba(0,0,0,0.4)' w='100%'>
-                    <Text fontSize='52px' fontW='700' c='white' tTf='uppercase' p='10px 0'>
-                        {item.title}
-                    </Text>
+            <NavLink key={id} to='/CollextionIntro'>
+                <View flex alignI='flex-end' justC='center' bgImg={item.src} w='350px' h='538px' m='20px 10px'>
+                    <View  flex justC='center' bgColor='rgba(0,0,0,0.4)' w='100%'>
+                        <Text fontSize='52px' fontW='700' c='white' tTf='uppercase' tD='none' p='10px 0'>
+                            {item.title}
+                        </Text>
+                    </View>
+                    {/* <NavLink to={"/" + item.title} /> */}
                 </View>
-                {/* <NavLink to={"/" + item.title}> click </NavLink> */}
-            </View>
+            </NavLink>
         ) )
     )
     render(){
@@ -116,7 +114,6 @@ class Collections extends React.Component{
             <View id='collections' p='100px 0' bT='solid 1px rgba(170,170,170,0.5)'>
                 <View tAlign='center' fontSize='45px' op='0.5'>Collections</View>
                 <View flex fW='wrap' justC='center' m='0px 100px'>
-                    <NavLink to='/CollextionIntro'> click </NavLink>
                     {/* <Route path='/CollextionIntro' component={CollextionIntro} /> */}
                     {this.renderItem()}
                 </View>

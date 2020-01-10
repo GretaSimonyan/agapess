@@ -26,7 +26,7 @@ function Footer(){
                 <View boxS='border-box'>Phone:</View>
                 <View boxS='border-box'>E-mail:</View>
             </View>
-            <View tAlign='center' fontSize='25px' lsp='3px'>
+            <View tAlign='center' fontSize='20px' lsp='3px'>
                 <View>HANDMADE COLLECTION</View>
                 <View>by Astghik Sahakyan</View>
             </View>

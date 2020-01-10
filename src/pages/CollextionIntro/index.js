@@ -45,7 +45,7 @@ class CollextionIntro extends React.Component{
         this.state.item.map( (item, id) => (
             <View key={id} h='538px' m='20px 10px'>
                 <View>
-                    <img src={item.src} />
+                    <img src={item.src} alt='i'/>
                 </View>
             </View>
         ) )
