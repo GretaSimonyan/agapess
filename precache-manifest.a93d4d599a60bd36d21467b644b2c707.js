@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "998f37fceabf81b83f7d9aa6d6ef9ffb",
+    "revision": "8cc45ec64d7cb1e412a2858b035f34a1",
     "url": "/agapess/index.html"
   },
   {
-    "revision": "c83d715645a36459dbf7",
+    "revision": "13355457c4ab61107a1a",
     "url": "/agapess/static/css/2.2b05c17f.chunk.css"
   },
   {
-    "revision": "35296c4f57c5292fc544",
+    "revision": "f85fa81060dc7fb4f138",
     "url": "/agapess/static/css/main.d8a32d07.chunk.css"
   },
   {
-    "revision": "c83d715645a36459dbf7",
-    "url": "/agapess/static/js/2.bce34ef1.chunk.js"
+    "revision": "13355457c4ab61107a1a",
+    "url": "/agapess/static/js/2.073af994.chunk.js"
   },
   {
-    "revision": "35296c4f57c5292fc544",
-    "url": "/agapess/static/js/main.9944bba9.chunk.js"
+    "revision": "f85fa81060dc7fb4f138",
+    "url": "/agapess/static/js/main.5ed7d7ab.chunk.js"
   },
   {
     "revision": "1c3012d7090b67912195",
