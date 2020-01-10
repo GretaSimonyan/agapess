@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/agapess/static/css/main.d8a32d07.chunk.css",
-    "main.js": "/agapess/static/js/main.bb92e895.chunk.js",
-    "main.js.map": "/agapess/static/js/main.bb92e895.chunk.js.map",
+    "main.js": "/agapess/static/js/main.402d7241.chunk.js",
+    "main.js.map": "/agapess/static/js/main.402d7241.chunk.js.map",
     "runtime-main.js": "/agapess/static/js/runtime-main.1b5d4f38.js",
     "runtime-main.js.map": "/agapess/static/js/runtime-main.1b5d4f38.js.map",
     "static/css/2.2b05c17f.chunk.css": "/agapess/static/css/2.2b05c17f.chunk.css",
     "static/js/2.073af994.chunk.js": "/agapess/static/js/2.073af994.chunk.js",
     "static/js/2.073af994.chunk.js.map": "/agapess/static/js/2.073af994.chunk.js.map",
     "index.html": "/agapess/index.html",
-    "precache-manifest.a9f342d70fbb4edd9e4cd98cffd210dc.js": "/agapess/precache-manifest.a9f342d70fbb4edd9e4cd98cffd210dc.js",
+    "precache-manifest.56969052ddb4b8f48f92f9f3998311c4.js": "/agapess/precache-manifest.56969052ddb4b8f48f92f9f3998311c4.js",
     "service-worker.js": "/agapess/service-worker.js",
     "static/css/2.2b05c17f.chunk.css.map": "/agapess/static/css/2.2b05c17f.chunk.css.map",
     "static/css/main.d8a32d07.chunk.css.map": "/agapess/static/css/main.d8a32d07.chunk.css.map",
@@ -39,6 +39,6 @@
     "static/css/2.2b05c17f.chunk.css",
     "static/js/2.073af994.chunk.js",
     "static/css/main.d8a32d07.chunk.css",
-    "static/js/main.bb92e895.chunk.js"
+    "static/js/main.402d7241.chunk.js"
   ]
 }
