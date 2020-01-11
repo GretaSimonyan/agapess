@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import {  NavLink } from 'react-router-dom';
-// import CollextionIntro from '../../pages/CollextionIntro';
 
 import {
     View,
@@ -28,6 +27,9 @@ const CollectionItem = styled(View)`
         opacity: 1;
     }
 `;
+const Link = styled(NavLink) `
+   text-decoration: none
+`
 
 class Collections extends React.Component{
     constructor(props){
@@ -89,21 +91,21 @@ class Collections extends React.Component{
     }
     renderItem = () => (
         this.state.item.map( (item) => (
-            <NavLink key={item.id} to={`/CollextionIntro/${item.id}`}>
-                <CollectionItem tr='0.4s' flex alignI='flex-end' justC='center' bgImg={item.src} w='350px' h='538px' m='20px 10px'>
+            <Link key={item.id} to={`/CollextionIntro/${item.id}`}>
+                <CollectionItem tr='0.4s' bRad='5px' flex alignI='flex-end' justC='center' bgImg={item.src} w='350px' h='538px' m='20px 10px'>
                     <View tr='0.4s' op='0' flex justC='center' bgColor='rgba(0,0,0,0.4)' w='100%'>
-                        <Text fontSize='52px' fontW='700' c='white' tTf='uppercase' tD='none' p='10px 0'>
+                        <Text fontSize='40px' fontW='700' c='white' tTf='uppercase' p='10px 0'>
                             {item.title}
                         </Text>
                     </View>
                 </CollectionItem>
-            </NavLink>
+            </Link>
         ) )
     )
     render(){
         return(
             <View id='collections' p='100px 0' bT='solid 1px rgba(170,170,170,0.5)'>
-                <View tAlign='center' fontSize='45px' op='0.5'>Collections</View>
+                <View tAlign='center' fontSize='45px' op='0.5'>COLLECTIONS</View>
                 <View flex fW='wrap' justC='center' m='0px 100px'>
                     {this.renderItem()}
                 </View>

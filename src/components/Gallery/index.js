@@ -9,6 +9,7 @@ import photo1 from '../../assets/images/photo1.jpg';
 
 const Photo = styled.img`
     width: 100%; 
+    margin-bottom: -3.5px;
 `;
 
 function Gallery (){

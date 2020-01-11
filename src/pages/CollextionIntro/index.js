@@ -4,7 +4,6 @@ import {
     Header,
     Footer,
 } from '../../components';
-
 import { View } from '../../styled';
 
 import p1 from '../../assets/images/col1.jpg';
@@ -41,6 +40,9 @@ class CollextionIntro extends React.Component{
             ],
         }
     }
+    componentDidMount() {
+        window.scrollTo(0,0)
+    }
     renderItem = () => (
         this.state.item.map( (item, id) => (
             <View key={id} h='538px' m='20px 10px'>
@@ -56,7 +58,7 @@ class CollextionIntro extends React.Component{
             <>
                 <Header/>
                 <View p='100px 0'>
-                    <View tAlign='center' fontSize='45px' op='0.5'>Sweaters</View>
+                    <View tAlign='center' tTf='uppercase' fontSize='45px' op='0.5'>Sweaters</View>
                     <View id='svitr' flex fW='wrap' justC='center' m='0px 100px'>
                         {this.renderItem()}
                     </View>
