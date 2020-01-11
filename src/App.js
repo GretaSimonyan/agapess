@@ -12,7 +12,7 @@ function App(){
             <GlobalStyles/>
             <Switch>
                 <Route path='/' exact component={Home} />
-                <Route path='/CollextionIntro' exact component={CollextionIntro} />
+                <Route path='/CollextionIntro/:id' exact component={CollextionIntro} />
                 <Route component={NotFound} />
             </Switch>
         </>
