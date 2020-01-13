@@ -1,0 +1,122 @@
+[
+        {
+            "id": 1,
+            "pictures":[
+                "https://i.pinimg.com/originals/cb/8b/fd/cb8bfd4a7acda41ad657fad5592a7165.jpg",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "title": "sweaters"
+        },
+        {
+            "id": 2,
+            "pictures":[
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "title": "blouses"
+        },
+        {
+            "id": 3,
+            "pictures":[
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "title": "cardigans"
+        },
+        {
+            "id": 4,
+            "pictures":[
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "title": "coats"
+        },
+        {
+            "id": 5,
+            "pictures":[
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "title": "tunicas"
+        },
+        {
+            "id": 6,
+            "pictures":[
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "title": "panchos"
+        },
+        {
+            "id": 7,
+            "pictures":[
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "title": "shawls"
+        },
+        {
+            "id": 8,
+            "pictures":[
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "title": "scarfs"
+        },
+        {
+            "id": 9,
+            "pictures":[
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "title": "dresses"
+        },
+        {
+            "id": 10,
+            "pictures":[
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "title": "gilets"
+        }
+]
