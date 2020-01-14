@@ -27,6 +27,7 @@ const Link = styled.a`
     color: gray;
     text-transform: uppercase;
     text-decoration: none;
+    letter-spacing: 3px
     ${ (props) => props.headerType == 2 && `color: white` }
 `;
 
