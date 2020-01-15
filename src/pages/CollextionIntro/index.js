@@ -40,7 +40,6 @@ class CollextionIntro extends React.Component{
             if( this.props.match.params.id == o[key].id){
                 return o[key].title
             }
-            // console.log(key, o[key].id)
         }
     }
     
@@ -50,7 +49,7 @@ class CollextionIntro extends React.Component{
                 <Header/>
                 <View p='100px 0'>
                     <View tAlign='center' tTf='uppercase' fontSize='45px' op='0.5'>{this.itemsInfo()}</View>
-                    <View id='svitr' flex fW='wrap' justC='center' m='0px 100px'>
+                    <View id='item' flex fW='wrap' justC='center' m='0px 100px'>
                         {this.renderItem()}
                     </View>
                 </View>
