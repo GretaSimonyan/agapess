@@ -2,12 +2,12 @@
         {
             "id": 1,
             "pictures":[
-                "https://i.pinimg.com/originals/cb/8b/fd/cb8bfd4a7acda41ad657fad5592a7165.jpg",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "https://htmlforum.io/uploads/monthly_2017_09/P.png.9c9f00c5e928d1c8df5996b8a1886dac.png",
+                "../assets/images/col1.jpg",
+                "https://htmlforum.io/uploads/monthly_2017_09/P.png.9c9f00c5e928d1c8df5996b8a1886dac.png",
+                "https://htmlforum.io/uploads/monthly_2017_09/P.png.9c9f00c5e928d1c8df5996b8a1886dac.png",
+                "https://htmlforum.io/uploads/monthly_2017_09/P.png.9c9f00c5e928d1c8df5996b8a1886dac.png",
+                "https://htmlforum.io/uploads/monthly_2017_09/P.png.9c9f00c5e928d1c8df5996b8a1886dac.png"
             ],
             "title": "sweaters"
         },

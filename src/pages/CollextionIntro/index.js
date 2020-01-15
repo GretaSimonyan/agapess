@@ -21,12 +21,14 @@ class CollextionIntro extends React.Component{
             if( this.props.match.params.id == o[key].id){
                 let pic = o[key].pictures;
                 // console.log(pic)
-                pic.map( (i) => (
-                    <View h='538px' m='20px 10px'>
-                        <View>
-                            <img src={i[0]} alt='i'/>
+                return (
+                    pic.map( (i) => (
+                        <View h='538px' m='20px 10px'>
+                            <View h='538px'>
+                                <img src={i} alt='i'/>
+                            </View>
                         </View>
-                    </View>
+                        )
                     )
                 )
             }
@@ -43,7 +45,6 @@ class CollextionIntro extends React.Component{
     }
     
     render(){
-        // console.log(this.props.match.params.id)
         return(
             <>
                 <Header/>
