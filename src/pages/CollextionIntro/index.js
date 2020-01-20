@@ -1,26 +1,20 @@
 import React from 'react';
-// import styled from 'styled-components';
 import { 
     Header,
     Footer,
 } from '../../components';
 import { View } from '../../styled';
-
-import p1 from '../../assets/images/col1.jpg';
+import json from './collection.json';
 
 class CollextionIntro extends React.Component{
-    constructor(props){
-        super(props);
-    }
     componentDidMount() {
         window.scrollTo(0,0)
     }
     renderItem = () => {
-        let o = require('./collection.json');
-        for(let key in o){
-            if( this.props.match.params.id == o[key].id){
-                let pic = o[key].pictures;
-                // console.log(pic)
+        // let o = require('./collection.json');
+        for(let key in json){
+            if( this.props.match.params.id == json[key].id){
+                let pic = json[key].pictures;
                 return (
                     pic.map( (i) => (
                         <View h='538px' m='20px 10px'>
@@ -35,10 +29,10 @@ class CollextionIntro extends React.Component{
         }
     }
     itemsInfo = () => {
-        let o = require('./collection.json');
-        for(let key in o){
-            if( this.props.match.params.id == o[key].id){
-                return o[key].title
+        // let o = require('./collection.json');
+        for(let key in json){
+            if( this.props.match.params.id == json[key].id){
+                return json[key].title
             }
         }
     }
