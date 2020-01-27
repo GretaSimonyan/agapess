@@ -91,7 +91,7 @@ class Collections extends React.Component{
     }
     renderItem = () => (
         this.state.item.map( (item) => (
-            <Link key={item.id} to={`/CollextionIntro/${item.id}`}>
+            <Link key={item.id} to={`/CollectionIntro/${item.id}`}>
                 <CollectionItem tr='0.4s' bRad='5px' flex alignI='flex-end' justC='center' bgImg={item.src} w='350px' h='538px' m='20px 10px'>
                     <View tr='0.4s' op='0' flex justC='center' bgColor='rgba(0,0,0,0.4)' w='100%'>
                         <Text fontSize='40px' fontW='700' c='white' tTf='uppercase' p='10px 0'>

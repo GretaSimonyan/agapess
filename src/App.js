@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './pages/Home';
-import CollextionIntro from './pages/CollextionIntro';
+import CollectionIntro from './pages/CollectionIntro';
 import NotFound from './pages/NotFound';
 import { Route, Switch } from 'react-router-dom';
 import Snow from 'react-snow-effect';
@@ -15,7 +15,7 @@ function App(){
             <Snow />
             <Switch>
                 <Route path='/' exact component={Home} />
-                <Route path='/CollextionIntro/:id' exact component={CollextionIntro} />
+                <Route path='/CollectionIntro/:id' exact component={CollectionIntro} />
                 <Route component={NotFound} />
             </Switch>
         </>

@@ -1,82 +1,65 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import Slider from "react-slick";
 import { View } from '../../styled';
-// import json from './collection.json';
-import styled from 'styled-components';
-import red from '../../assets/images/red.png';
+import { createGlobalStyle } from 'styled-components';
+// import json from '../CollectionIntro/collection.json';
 
-const Slide = styled.img`
-    width: "100%";
-    height: "100%"
+import col1 from '../../assets/images/col1.jpg';
+
+const ScrollOff = createGlobalStyle`
+    body{
+        overflow: hidden
+    }
 `;
 
 class ZoomSlider extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            type: 1,
-        }
+    componentWillMount(){
+        this.root = document.createElement('div');
+        document.body.appendChild(this.root);
     }
-    zoomSlider = () => {
-        if(this.state.type == 1){
-            this.setState(() => ({
-                type: 2,
-            }))
-        }
-        else {
-            this.setState(() => ({
-                type: 1
-            }))
-        }
-        console.log(this.state.type)
-        // let sec = document.createElement("section");
-        // document.body.appendChild(sec);
-        // sec.style.width = "100vw";
-        // sec.style.height = "100vh";
-        // sec.style.backgroundColor = "rgba(0,0,0,0.7)";
-        // sec.style.position = "absolute";
-        // sec.style.top = 0;
-        // sec.style.left = 0;
-        // sec.style.display = "flex";
-
-			// let content = document.createElement("div");
-			// sec.appendChild(content);
-			// content.style.width = "70%";
-			// content.style.height = "80%";
-			// content.style.border = "1px solid white";
-			// content.style.margin = "auto";
-			// content.style.position = "relative";
-
-			// let but_x = document.createElement("button");
-			// content.appendChild(but_x);
-			// but_x.innerText = "X";
-			// but_x.style.fontSize = "25px";
-			// but_x.style.border = "none";
-			// but_x.style.outline = "none";
-			// but_x.style.position = "absolute";
-			// but_x.style.right = 0;
-			// but_x.onclick = () => {
-			// 	sec.remove();
-			// }
-
-			// let img = document.createElement("img");
-			// content.appendChild(img);
-			// img.src = t.src;
-			// img.style.width = "100%";
-			// img.style.height = "100%";
-    }
-    Remove = () => {
-
+    componentWillUnmount(){
+        document.body.removeChild(this.root);
     }
     render(){
-        return(
-            <View flex w='100vw' h="100vh" bgColor='rgba(0,0,0,0.7)' pos='absolute' t='0' l='0'>
-                <View w='70%' h="80%" border='1px solid white' m='auto' pos='relative'>
-                    <View onClick={this.Remove()} right='0' border='none' fSize='25px' pos='absolute'>
-                        X
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 600,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          };
+          console.log(this.props.link)
+
+        return (
+            ReactDOM.createPortal(
+                <View z='99' flex w='100vw' h="100vh" bgColor='rgba(0,0,0,0.7)' pos='fixed' top='0' left='0'>
+                    <ScrollOff/>
+                    <View w='75%' border='0.1px solid rgba(255,255,255,0.3)' m='auto' pos='relative'>
+                        <View onClick={this.props.onClose} right='0' border='none' fSize='50px' pos='absolute'>
+                            X
+                        </View>
+                        {this.props.children}
+                        <Slider {...settings}>
+                            {/* {
+                                this.props.map( () => {
+                                    // let pic = json[key].pictures;
+                                    // pic.map( (i) => (
+                                    //     <View bgImg={i} w='100%' h='95vh' bgSize='contain' bgRep='no-repeat' bgPos='center'/>
+                                    //     )
+                                    // )
+                                    console.log(this.props.id)
+                                })
+                            } */}
+
+                            <View bgImg={col1} w='100%' h='95vh' bgSize='contain' bgRep='no-repeat' bgPos='center'/>
+                            <View bgImg={col1} w='100%' h='95vh' bgSize='contain' bgRep='no-repeat' bgPos='center'/>
+                            <View bgImg={col1} w='100%' h='95vh' bgSize='contain' bgRep='no-repeat' bgPos='center'/>
+                        </Slider>
                     </View>
-                    <Slide src={red}/>
-                </View>
-            </View>
+                </View>,
+                this.root
+            )
         )
     }
 }

@@ -6,65 +6,48 @@ import {
 import { View } from '../../styled';
 import json from './collection.json';
 import ZoomSlider from '../ZoomSlider';
-// import styled from 'styled-components';
 
-// const Frame = styled(View)`
-//     ${ (props) => props.type == 1 ? `height: 538px` : `height: ${538*2}px` }
-// `
-
-// const Sec = styled(View)`
-
-// `
-
-class CollextionIntro extends React.Component{
+class CollectionIntro extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            type: 1,
+            opend: false,
+            name: 'vercrec'
         }
-    }
+    };
     componentDidMount() {
         window.scrollTo(0,0)
-    }
-    zoomSlider = (t) => {
-        if(this.state.type == 1){
-            this.setState(() => ({
-                type: 2,
-            }))
-        }
-        else {
-            this.setState(() => ({
-                type: 1
-            }))
-        }
-        console.log(this.state.type)
-        // let sec = document.createElement("section");
-        document.body.appendChild(ZoomSlider);
-    }
+    };
+    toggleSlider = () => {
+        this.setState(state => ({ opend: !state.opend}));
+    };
     renderItem = () => {
         for(let key in json){
             if( this.props.match.params.id == json[key].id){
                 let pic = json[key].pictures;
                 return (
-                    pic.map( (i) => (
-                        <View h='538px' m='20px 10px'>
-                            <View h='538px'>
-                                <img onClick={this.zoomSlider} src={i} alt='i'/>
-                            </View>
-                        </View>
-                        )
+                    pic.map( (i,index) => {
+                        this.setState(link => ({ link: i}));
+                            return(
+                                <View key={index} h='538px' m='20px 10px'>
+                                    <View h='538px'>
+                                        <img onClick={this.toggleSlider} src={i} alt='i'/>
+                                    </View>
+                                </View>
+                            )
+                        }
                     )
                 )
             }
         }
-    }
+    };
     itemsInfo = () => {
         for(let key in json){
             if( this.props.match.params.id == json[key].id){
                 return json[key].title
             }
         }
-    }
+    };
     
     render(){
         return(
@@ -74,6 +57,9 @@ class CollextionIntro extends React.Component{
                     <View tAlign='center' tTf='uppercase' fontSize='45px' op='0.5'>{this.itemsInfo()}</View>
                     <View id='item' flex fW='wrap' justC='center' m='0px 100px'>
                         {this.renderItem()}
+                        {this.state.opend &&
+                            <ZoomSlider onClose={this.toggleSlider} name={this.state.link}/>
+                        }
                     </View>
                 </View>
                 <Footer/>
@@ -82,7 +68,7 @@ class CollextionIntro extends React.Component{
     }
 }
 
-export default CollextionIntro;
+export default CollectionIntro;
 
 
 // import React from 'react';
