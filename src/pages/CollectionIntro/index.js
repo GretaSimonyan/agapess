@@ -12,30 +12,27 @@ class CollectionIntro extends React.Component{
         super(props);
         this.state = {
             opend: false,
-            name: 'vercrec'
+            showModalIndex: 1
         }
     };
     componentDidMount() {
         window.scrollTo(0,0)
     };
-    toggleSlider = () => {
-        this.setState(state => ({ opend: !state.opend}));
+    toggleSlider = (index) => {
+        this.setState(state => ({ opend: !state.opend, showModalIndex: index}));
     };
     renderItem = () => {
         for(let key in json){
             if( this.props.match.params.id == json[key].id){
                 let pic = json[key].pictures;
                 return (
-                    pic.map( (i,index) => {
-                        this.setState(link => ({ link: i}));
-                            return(
-                                <View key={index} h='538px' m='20px 10px'>
-                                    <View h='538px'>
-                                        <img onClick={this.toggleSlider} src={i} alt='i'/>
-                                    </View>
-                                </View>
-                            )
-                        }
+                    pic.map( (i,index) => (
+                        <View key={index} h='538px' m='20px 10px'>
+                            <View h='538px'>
+                                <img onClick = {() => this.toggleSlider(index)} src={i} alt='i'/>
+                            </View>
+                        </View>
+                        )
                     )
                 )
             }
@@ -50,6 +47,7 @@ class CollectionIntro extends React.Component{
     };
     
     render(){
+        console.log(this.state.showModalIndex)
         return(
             <>
                 <Header/>
@@ -58,7 +56,7 @@ class CollectionIntro extends React.Component{
                     <View id='item' flex fW='wrap' justC='center' m='0px 100px'>
                         {this.renderItem()}
                         {this.state.opend &&
-                            <ZoomSlider onClose={this.toggleSlider} name={this.state.link}/>
+                            <ZoomSlider onClose={this.toggleSlider} showModalIndex={this.state.index}/>
                         }
                     </View>
                 </View>

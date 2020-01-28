@@ -92,8 +92,8 @@ class Collections extends React.Component{
     renderItem = () => (
         this.state.item.map( (item) => (
             <Link key={item.id} to={`/CollectionIntro/${item.id}`}>
-                <CollectionItem tr='0.4s' bRad='5px' flex alignI='flex-end' justC='center' bgImg={item.src} w='350px' h='538px' m='20px 10px'>
-                    <View tr='0.4s' op='0' flex justC='center' bgColor='rgba(0,0,0,0.4)' w='100%'>
+                <CollectionItem bgImg={item.src} flex alignI='center' justC='center' tr='0.4s' bRad='5px'  w='350px' h='538px' m='20px 10px'>
+                    <View flex justC='center' tr='0.4s' op='0' bgColor='rgba(0,0,0,0.4)' w='100%'>
                         <Text fontSize='40px' fontW='700' c='white' tTf='uppercase' p='10px 0'>
                             {item.title}
                         </Text>
@@ -104,7 +104,7 @@ class Collections extends React.Component{
     )
     render(){
         return(
-            <View id='collections' p='100px 0' flex justC='center' bT='solid 1px rgba(170,170,170,0.5)'>
+            <View id='collections' flex justC='center' p='100px 0' bT='solid 1px rgba(170,170,170,0.5)'>
                 <View w='80%' >
                     <View tAlign='center' fontSize='45px' op='0.5'>COLLECTIONS</View>
                     <View flex fW='wrap' justC='center' m='0px 100px'>
