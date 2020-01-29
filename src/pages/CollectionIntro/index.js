@@ -12,14 +12,15 @@ class CollectionIntro extends React.Component{
         super(props);
         this.state = {
             opend: false,
-            showModalIndex: 1
+            showModalIndex: 1,
+            arr: []
         }
     };
     componentDidMount() {
         window.scrollTo(0,0)
     };
-    toggleSlider = (index) => {
-        this.setState(state => ({ opend: !state.opend, showModalIndex: index}));
+    toggleSlider = (index,pic) => {
+        this.setState(state => ({ opend: !state.opend, showModalIndex: index, arr: pic}));
     };
     renderItem = () => {
         for(let key in json){
@@ -29,7 +30,7 @@ class CollectionIntro extends React.Component{
                     pic.map( (i,index) => (
                         <View key={index} h='538px' m='20px 10px'>
                             <View h='538px'>
-                                <img onClick = {() => this.toggleSlider(index)} src={i} alt='i'/>
+                                <img onClick = {() => this.toggleSlider(index,pic)} src={i} alt='i'/>
                             </View>
                         </View>
                         )
@@ -56,7 +57,7 @@ class CollectionIntro extends React.Component{
                     <View id='item' flex fW='wrap' justC='center' m='0px 100px'>
                         {this.renderItem()}
                         {this.state.opend &&
-                            <ZoomSlider onClose={this.toggleSlider} showModalIndex={this.state.index}/>
+                            <ZoomSlider onClose={this.toggleSlider} showModalIndex={this.state.showModalIndex} arr={this.state.arr}/>
                         }
                     </View>
                 </View>

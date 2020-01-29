@@ -4,9 +4,6 @@ import Slider from "react-slick";
 import { View } from '../../styled';
 import { createGlobalStyle } from 'styled-components';
 import styled from 'styled-components';
-// import json from '../CollectionIntro/collection.json';
-
-import col1 from '../../assets/images/col1.jpg';
 
 const ScrollOff = createGlobalStyle`
     body{
@@ -35,8 +32,15 @@ class ZoomSlider extends React.Component {
             speed: 600,
             slidesToShow: 1,
             slidesToScroll: 1,
+            initialSlide: this.props.showModalIndex,
+            adaptiveHeight: true,
+            // appendDots: dots => (
+            //     <View c='red'>
+            //       <ul> {dots} </ul>
+            //     </View>
+            //   )
         };
-        console.log(this.props.showModalIndex);
+        // console.log(this.props.showModalIndex, this.props.arr);
         return(
             ReactDOM.createPortal(
                 <View z='99' flex w='100vw' h="100vh" bgColor='rgba(0,0,0,0.7)' pos='fixed' top='0' left='0'>
@@ -48,22 +52,12 @@ class ZoomSlider extends React.Component {
                         {this.props.children}
                         <View w='75%' border='0.1px solid rgba(255,255,255,0.3)' m='auto' pos='relative'>
                             <Slider {...settings}>
-                                {/* {
-                                    this.props.map( () => {
-                                        // let pic = json[key].pictures;
-                                        // pic.map( (i) => (
-                                        //     <View bgImg={i} w='100%' h='95vh' bgSize='contain' bgRep='no-repeat' bgPos='center'/>
-                                        //     )
-                                        // )
-                                        console.log(this.props.id)
-                                    })
-                                } */}
-                                {/* {
-                                    (json[this.props.showModalIndex] )
-                                } */}
-                                <View bgImg={col1} w='100%' h='95vh' bgSize='contain' bgRep='no-repeat' bgPos='center'/>
-                                <View bgImg={col1} w='100%' h='95vh' bgSize='contain' bgRep='no-repeat' bgPos='center'/>
-                                <View bgImg={col1} w='100%' h='95vh' bgSize='contain' bgRep='no-repeat' bgPos='center'/>
+                                {
+                                    this.props.arr.map( (i) =>(
+                                        <View bgImg={i} w='100%' h='80vh' bgSize='contain' bgRep='no-repeat' bgPos='center'/>
+                                        )
+                                    )
+                                }
                             </Slider>
                         </View>
                     </View>
