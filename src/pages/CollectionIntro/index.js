@@ -5,7 +5,7 @@ import {
 } from '../../components';
 import { View } from '../../styled';
 import json from './collection.json';
-import ZoomSlider from '../ZoomSlider';
+import ZoomSlider from '../../components/ZoomSlider';
 
 class CollectionIntro extends React.Component{
     constructor(props){
@@ -28,10 +28,15 @@ class CollectionIntro extends React.Component{
                 let pic = json[key].pictures;
                 return (
                     pic.map( (i,index) => (
-                        <View key={index} h='538px' m='20px 10px'>
-                            <View h='538px'>
-                                <img onClick = {() => this.toggleSlider(index,pic)} src={i} alt='i'/>
-                            </View>
+                        <View key={index} m='20px 10px'>
+                            <View onClick = {() => this.toggleSlider(index,pic)} 
+                                w='350px' 
+                                h='400px' 
+                                bgImg={i} 
+                                cursor='pointer'
+                                bgSize='contain' 
+                                bgRep='no-repeat'
+                            />
                         </View>
                         )
                     )
@@ -48,16 +53,22 @@ class CollectionIntro extends React.Component{
     };
     
     render(){
-        console.log(this.state.showModalIndex)
+        // console.log(this.state.showModalIndex)
         return(
             <>
                 <Header/>
-                <View p='100px 0'>
-                    <View tAlign='center' tTf='uppercase' fontSize='45px' op='0.5'>{this.itemsInfo()}</View>
+                <View p='100px 0' p_m='200px 0' p_s='200px 0'>
+                    <View tAlign='center' tTf='uppercase' fontSize='32px' op='0.5'>
+                        {this.itemsInfo()}
+                    </View>
                     <View id='item' flex fW='wrap' justC='center' m='0px 100px'>
                         {this.renderItem()}
                         {this.state.opend &&
-                            <ZoomSlider onClose={this.toggleSlider} showModalIndex={this.state.showModalIndex} arr={this.state.arr}/>
+                            <ZoomSlider 
+                                onClose={this.toggleSlider}
+                                showModalIndex={this.state.showModalIndex}
+                                arr={this.state.arr}
+                            />
                         }
                     </View>
                 </View>

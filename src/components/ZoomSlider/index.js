@@ -11,7 +11,6 @@ const ScrollOff = createGlobalStyle`
     }
 `;
 const Close = styled(View)`
-    cursor: pointer;
     &:hover{
         opacity: 1
     }
@@ -46,7 +45,15 @@ class ZoomSlider extends React.Component {
                 <View z='99' flex w='100vw' h="100vh" bgColor='rgba(0,0,0,0.7)' pos='fixed' top='0' left='0'>
                     <ScrollOff/>
                     <View w='50%' m='auto' pos='relative'>
-                        <Close onClick={this.props.onClose} right='0' border='none' fontSize='25px' pos='absolute' c='white' op='0.5'>
+                        <Close onClick={this.props.onClose}
+                            op='0.5'
+                            c='white'
+                            right='0'
+                            border='none'
+                            pos='absolute'
+                            fontSize='25px'
+                            cursor='pointer'
+                        >
                             X
                         </Close>
                         {this.props.children}

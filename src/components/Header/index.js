@@ -9,9 +9,6 @@ import {
     View,
 } from '../../styled';
 
-const Logo = styled.img`
-    width: 160px;
-`;
 const SocialLink = styled.a`
     text-decoration: none;
     ${ (props) => props.headerType == 2 ? `color: white` : `color: gray` }
@@ -63,10 +60,32 @@ class Header extends React.Component{
     render(){
         const { headerType } = this.state
         return(
-            <View flex z='99' boxS='border-box' pos='fixed' alignI='center' justC='center' m="0 auto" w='100%' p="15px 0" bgColor={this.state.bgcolor} boxSh='0px 11px 32px -9px rgba(0, 0, 0, 0.4)'>
-                <View w='80%' flex justC='space-between' alignI="center" fD_m="column">
-                    <View><NavLink to='/'><Logo onClick={this.scrollHome} src={ headerType === 2 ? logoWhite : logoGray }/></NavLink></View>
-                    <View flex alignI='center' m_m="20px 0 0 0">
+            <View flex 
+                z='99'
+                w='100%'
+                m="0 auto"
+                p="15px 0"
+                pos='fixed'
+                justC='center'
+                alignI='center'
+                boxS='border-box'
+                bgColor={this.state.bgcolor}
+                boxSh='0px 11px 32px -9px rgba(0, 0, 0, 0.4)'
+            >
+                <View w='80%' flex justC='space-between' alignI="center" fD_m="column" fD_s='column'>
+                    <View>
+                        <NavLink to='/'>
+                            <View onClick={this.scrollHome}
+                                h='50px'
+                                w='125px'
+                                bgPos='center'
+                                bgSize='contain'
+                                bgRep='no-repeat'
+                                bgImg={ headerType === 2 ? logoWhite : logoGray }
+                            />
+                        </NavLink>
+                    </View>
+                    <View flex alignI='center' mT_m="20px">
                         <View><Link headerType={headerType} href='#about'>About</Link></View>
                         <View><Link headerType={headerType} href='#collections'>Collections</Link></View>
                         <View><Link headerType={headerType} href='#contact'>Contact</Link></View>
