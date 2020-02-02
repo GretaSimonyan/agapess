@@ -63,10 +63,10 @@ class Header extends React.Component{
     render(){
         const { headerType } = this.state
         return(
-            <View tr='0.4s' flex z='99' boxS='border-box' pos='fixed' alignI='center' justC='center' m="0 auto" w='100%' p="15px 0" bgColor={this.state.bgcolor} boxSh='0px 11px 32px -9px rgba(0, 0, 0, 0.4)'>
-                <View w='80%' flex justC='space-between'>
+            <View flex z='99' boxS='border-box' pos='fixed' alignI='center' justC='center' m="0 auto" w='100%' p="15px 0" bgColor={this.state.bgcolor} boxSh='0px 11px 32px -9px rgba(0, 0, 0, 0.4)'>
+                <View w='80%' flex justC='space-between' alignI="center" fD_m="column">
                     <View><NavLink to='/'><Logo onClick={this.scrollHome} src={ headerType === 2 ? logoWhite : logoGray }/></NavLink></View>
-                    <View flex alignI='center'>
+                    <View flex alignI='center' m_m="20px 0 0 0">
                         <View><Link headerType={headerType} href='#about'>About</Link></View>
                         <View><Link headerType={headerType} href='#collections'>Collections</Link></View>
                         <View><Link headerType={headerType} href='#contact'>Contact</Link></View>

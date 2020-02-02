@@ -109,16 +109,50 @@ const other =({boxS, boxSh, overflow, c, op, tr}) =>`
   ${ tr ? `transition: ${tr}` : "" };
 `;
 
+const setResponsiveStyles = props => {
+  const mediaQuerys = {
+    s: '(max-width: 480px)',
+    m: '(min-width: 480px) and (max-width: 960px)',
+    l: '(min-width: 960px) and (max-width: 1260px)',
+    xl: '(min-width: 1800px)'
+  };
+
+  let responsiveProps = Object.entries(props).filter(prop => prop[0].includes('_'));
+  if(!responsiveProps.length) return '';
+
+  const query = {};
+
+  responsiveProps.forEach(item => {
+    const queryName = item[0].slice(item.indexOf('-'));
+    const propName = item[0].slice(0, item.indexOf('-') - 1);
+
+    if(!query[queryName]) query[queryName] = {};
+    
+    query[queryName][propName] = item[1];
+  })
+
+  return Object.entries(query).map(item => `
+    @media ${mediaQuerys[item[0]]}{
+      ${setStyles(item[1])}
+    }
+  `).join('');
+};
+
+const setStyles = props => `
+  ${ size(props) }
+  ${ fonts(props) }
+  ${ text(props) }
+  ${ marginPadding(props) }
+  ${ positions(props) }
+  ${ backgrounds(props) }
+  ${ flexBox(props) }
+  ${ border(props) }
+  ${ other(props) }
+`;
+
 const View = styled.div `
-  ${ size }
-  ${ fonts }
-  ${ text }
-  ${ marginPadding }
-  ${ positions }
-  ${ backgrounds }
-  ${ flexBox }
-  ${ border }
-  ${ other }
+  ${ setStyles }
+  ${ setResponsiveStyles }
 `;
 
 export default View;
