@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import Home from './pages/Home';
 import CollectionIntro from './pages/CollectionIntro';
 import NotFound from './pages/NotFound';
@@ -22,4 +22,4 @@ function App(){
     )
 }
 
-export default App;
+export default memo(App);
