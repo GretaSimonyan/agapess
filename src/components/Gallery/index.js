@@ -1,21 +1,18 @@
 import React from 'react';
-import styled from 'styled-components';
-
 import {
     View,
 } from '../../styled';
-
 import photo1 from '../../assets/images/photo1.jpg';
 
-const Photo = styled.img`
-    width: 100%; 
-    margin-bottom: -3.5px;
-`;
+// const Photo = styled.img`
+//     width: 100%; 
+//     margin-bottom: -3.5px;
+// `;
 
 function Gallery (){
     return(
-        <View>
-            <Photo src={photo1}/>
+        <View mT='90px'>
+            <View bgImg={photo1} w='100%' h='71vh' bgSize='cover' bgRep='no-repeat' mB='-3.2px' bgPos='center'/>
         </View>
     )
 }

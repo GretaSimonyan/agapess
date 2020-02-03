@@ -61,7 +61,13 @@ class ZoomSlider extends React.Component {
                             <Slider {...settings}>
                                 {
                                     this.props.arr.map( (i) =>(
-                                        <View bgImg={i} w='100%' h='80vh' bgSize='contain' bgRep='no-repeat' bgPos='center'/>
+                                        <View bgImg={i} 
+                                            w='100%' 
+                                            h='80vh' 
+                                            bgPos='center'
+                                            bgSize='contain' 
+                                            bgRep='no-repeat' 
+                                        />
                                         )
                                     )
                                 }

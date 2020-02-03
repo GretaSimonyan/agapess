@@ -3,21 +3,15 @@ import styled from 'styled-components';
 import logoWhite from '../../assets/images/logoWhite.png';
 import logoGray from '../../assets/images/logoGray.png';
 import { NavLink } from 'react-router-dom';
-import { TiSocialFacebookCircular, TiSocialInstagramCircular } from "react-icons/ti";
+import {TiSocialFacebookCircular as Fb, TiSocialInstagramCircular as Insta} from "react-icons/ti";
 
 import {
     View,
 } from '../../styled';
 
 const SocialLink = styled.a`
-    text-decoration: none;
+    font-size: 29px;
     ${ (props) => props.headerType == 2 ? `color: white` : `color: gray` }
-`;
-const Fb = styled(TiSocialFacebookCircular)`
-    font-size: 30px;
-`;
-const Insta = styled(TiSocialInstagramCircular)`
-    font-size: 30px;
 `;
 const Link = styled.a`
     margin: 15px;
