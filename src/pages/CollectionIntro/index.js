@@ -86,13 +86,13 @@ export default CollectionIntro;
 
 
 // import React from 'react';
-// // import styled from 'styled-components';
 // import { 
 //     Header,
 //     Footer,
 // } from '../../components';
 // import { View } from '../../styled';
-
+// import json from './collection.json';
+// import ZoomSlider from '../../components/ZoomSlider';
 // import p1 from '../../assets/images/col1.jpg';
 
 // class CollextionIntro extends React.Component{
@@ -125,41 +125,59 @@ export default CollectionIntro;
 //                     src: p1,
 //                 }
 //             ],
+//             opend: false,
+//             showModalIndex: 1,
 //         }
 //     }
 //     componentDidMount() {
 //         window.scrollTo(0,0)
-//     }
+//     };
+//     toggleSlider = (index) => {
+//         this.setState(state => ({ 
+//             opend: !state.opend, 
+//             showModalIndex: index, 
+//             }
+//         ));
+//     };
 //     renderItem = () => (
-//         this.state.item.map( (item, id) => (
-//             <View key={id} h='538px' m='20px 10px'>
-//                 <View>
-//                     <img src={item.src} alt='i'/>
+//         this.state.item.map( (item, index) => (
+//             <View key={index} m='20px 10px'>
+//                 <View 
+//                     w='300px'
+//                     h='400px'
+//                     bgImg={item.src}
+//                     cursor='pointer'
+//                     bgSize='contain'
+//                     bgRep='no-repeat'
+//                 />
 //                 </View>
-//             </View>
 //         ) )
 //     )
 //     itemsInfo = () => {
-//         let o = require('./collection.json');
-//         for(let key in o){
-//             if( this.props.match.params.id == o[key].id){
-//                 return o[key].title
+//         for(let key in json){
+//             if( this.props.match.params.id == json[key].id){
+//                 return json[key].title
 //             }
-//             // console.log(key, o[key].id)
 //         }
-        
-
-//     }
+//     };
     
 //     render(){
 //         // console.log(this.props.match.params.id)
 //         return(
 //             <>
 //                 <Header/>
-//                 <View p='100px 0'>
-//                     <View tAlign='center' tTf='uppercase' fontSize='45px' op='0.5'>{this.itemsInfo()}</View>
-//                     <View id='svitr' flex fW='wrap' justC='center' m='0px 100px'>
+//                 <View p='100px 0' p_m='200px 0' p_s='200px 0'>
+//                     <View tAlign='center' tTf='uppercase' fontSize='32px' op='0.5'>
+//                         {this.itemsInfo()}
+//                     </View>
+//                     <View id='item' flex fW='wrap' justC='center' m='0px 100px'>
 //                         {this.renderItem()}
+//                         {this.state.opend &&
+//                             <ZoomSlider 
+//                                 onClose={this.toggleSlider}
+//                                 showModalIndex={this.state.showModalIndex}
+//                             />
+//                         }
 //                     </View>
 //                 </View>
 //                 <Footer/>

@@ -12,7 +12,14 @@ import photo1 from '../../assets/images/photo1.jpg';
 function Gallery (){
     return(
         <View mT='90px'>
-            <View bgImg={photo1} w='100%' h='71vh' bgSize='cover' bgRep='no-repeat' mB='-3.2px' bgPos='center'/>
+            <View bgImg={photo1} 
+                w='100%' 
+                h='71vh' 
+                mB='-3.2px' 
+                bgPos='center'
+                bgSize='cover' 
+                bgRep='no-repeat' 
+            />
         </View>
     )
 }
