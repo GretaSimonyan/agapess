@@ -7,7 +7,7 @@ function NewColl(){
         <View mB='90px'>
             <View bgImg={newcollection}
                 w='100%' 
-                h='120vh' 
+                h='50vw' 
                 bgPos='center' 
                 bgSize='cover' 
                 bgRep='no-repeat' 

@@ -14,7 +14,7 @@ function Gallery (){
         <View mT='90px'>
             <View bgImg={photo1} 
                 w='100%' 
-                h='71vh' 
+                h='35vw' 
                 mB='-3.2px' 
                 bgPos='center'
                 bgSize='cover' 
