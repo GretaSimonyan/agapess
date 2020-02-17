@@ -6,6 +6,10 @@ import {
 import { View } from '../../styled';
 import json from './collection.json';
 import ZoomSlider from '../../components/ZoomSlider';
+// import {Example} from '../../assets/images/sweaters';
+// import("../../assets/images/sweaters").then(Example => {
+    
+// });
 
 class CollectionIntro extends React.Component{
     constructor(props){
@@ -23,22 +27,30 @@ class CollectionIntro extends React.Component{
         this.setState(state => ({ 
             opend: !state.opend, 
             showModalIndex: index, 
-            arr: pic}
+            arr: pic
+            }
         ));
     };
     renderItem = () => {
         for(let key in json){
             if( this.props.match.params.id == json[key].id){
-                let pic = json[key].pictures;
+                let pic = json[key].pictures.map(async() => {
+                    const data = await import("../../assets/images/sweaters/col1.jpg")
+                    console.log(data.default)
+                    return data.default
+                });
+                // console.log(Promise.resolve(pic[0]))
+                console.log(pic)
                 return (
                     pic.map( (i,index) => (
-                        <View key={index} m='20px 10px'>
+                        <View key={index} m='12px 5px'>
                             <View onClick={() => this.toggleSlider(index,pic)}
                                 w='300px'
-                                h='400px'
+                                h='300px'
                                 bgImg={i}
+                                bgSize='cover'
+                                bgPos='center'
                                 cursor='pointer'
-                                bgSize='contain'
                                 bgRep='no-repeat'
                             />
                         </View>
@@ -61,7 +73,7 @@ class CollectionIntro extends React.Component{
         return(
             <>
                 <Header/>
-                <View p='100px 0' p_m='200px 0' p_s='200px 0'>
+                <View p='100px 0' p_m='200px 0' p_s='200px 0' >
                     <View tAlign='center' tTf='uppercase' fontSize='32px' op='0.5'>
                         {this.itemsInfo()}
                     </View>

@@ -2,24 +2,25 @@
     {
         "id": 1,
         "pictures":[
-            "https://htmlforum.io/uploads/monthly_2017_09/P.png.9c9f00c5e928d1c8df5996b8a1886dac.png",
-            "../../assets/images/col1.jpg",
-            "http://100fotok.ru/wp-content/uploads/2018/12/Kartinki_500x500_1.jpg",
-            "https://pievedums.lv/image/cache/catalog/Augli%20un%20darzeni/1537012981_177512-500x500.jpg",
-            "https://apriori-center.org/wp-content/uploads/2016/07/Evolution_by_will_yen-500x500.png",
-            "https://cdn.hmmagazine.com/wp-content/uploads/2019/07/21210038/wolves-at-the-gate-eclipse-2019-500x500.jpg"
+            "https://marketplace.canva.com/MADR_7yqZFU/1/thumbnail_large-1/canva-photo-of-man-sitting-on-rock-MADR_7yqZFU.jpg",
+            "https://images.pexels.com/photos/735308/pexels-photo-735308.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            "https://becauseimaddicted.net/wp-content/uploads/2014/11/urban-outfitters-sweaters-photoshoot06.jpg",
+            "https://i.pinimg.com/originals/52/48/36/524836dcad2bf4129da558574f947c7b.jpg",
+            "https://i.pinimg.com/originals/6d/c8/7a/6dc87ad6f004abcdfee40c25299b9502.jpg",
+            "https://i.pinimg.com/originals/9d/00/5e/9d005e7bd520cb66917135c21efe3ea7.jpg",
+            "https://farm66.static.flickr.com/65535/48981524472_9002beac28_b.jpg"
         ],
         "title": "sweaters"
     },
     {
         "id": 2,
         "pictures":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "col1",
+            "col1",
+            "col1",
+            "col1",
+            "col1",
+            "col1"
         ],
         "title": "blouses"
     },

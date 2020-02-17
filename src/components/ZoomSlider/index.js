@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import { View } from '../../styled';
 import { createGlobalStyle } from 'styled-components';
 import styled from 'styled-components';
+import {FaTimes as CloseButton} from  "react-icons/fa";
 
 const ScrollOff = createGlobalStyle`
     body{
@@ -26,13 +27,14 @@ class ZoomSlider extends React.Component {
     }
     render(){
         const settings = {
-            dots: true,
+            dots: false,
             infinite: true,
             speed: 600,
             slidesToShow: 1,
             slidesToScroll: 1,
             initialSlide: this.props.showModalIndex,
             adaptiveHeight: true,
+            adaptiveWidth: true,
             // appendDots: dots => (
             //     <View c='red'>
             //       <ul> {dots} </ul>
@@ -44,26 +46,27 @@ class ZoomSlider extends React.Component {
             ReactDOM.createPortal(
                 <View z='99' flex w='100vw' h="100vh" bgColor='rgba(0,0,0,0.7)' pos='fixed' top='0' left='0'>
                     <ScrollOff/>
+                    <Close onClick={this.props.onClose}
+                        op='0.5'
+                        c='white'
+                        right='0'
+                        border='none'
+                        pos='absolute'
+                        fontSize='30px'
+                        cursor='pointer'
+                        mR='2%'
+                    >
+                        <CloseButton/>
+                    </Close>
                     <View w='50%' m='auto' pos='relative'>
-                        <Close onClick={this.props.onClose}
-                            op='0.5'
-                            c='white'
-                            right='0'
-                            border='none'
-                            pos='absolute'
-                            fontSize='25px'
-                            cursor='pointer'
-                        >
-                            X
-                        </Close>
                         {this.props.children}
-                        <View w='75%' border='0.1px solid rgba(255,255,255,0.3)' m='auto' pos='relative'>
+                        <View w='100%' m='auto' pos='relative'>
                             <Slider {...settings}>
                                 {
                                     this.props.arr.map( (i) =>(
                                         <View bgImg={i} 
                                             w='100%' 
-                                            h='80vh' 
+                                            h='97vh' 
                                             bgPos='center'
                                             bgSize='contain' 
                                             bgRep='no-repeat' 

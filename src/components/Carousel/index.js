@@ -42,7 +42,7 @@ class Carousel extends React.Component{
             //   ]
           };
         return(
-            <View overflow='hidden' >
+            <View overflow='hidden' pos='relative'>
                 <Slider {...settings}>
                     <View bgImg={cover1} w='100%' h='100vh' bgSize='cover' />
                     <View bgImg={cover2} w='100%' h='100vh' bgSize='cover' />
