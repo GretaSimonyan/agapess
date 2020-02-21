@@ -6,10 +6,7 @@ import {
 import { View } from '../../styled';
 import json from './collection.json';
 import ZoomSlider from '../../components/ZoomSlider';
-// import {Example} from '../../assets/images/sweaters';
-// import("../../assets/images/sweaters").then(Example => {
-    
-// });
+// import("../../assets/images/sweaters").then(Example => {});
 
 class CollectionIntro extends React.Component{
     constructor(props){
@@ -39,7 +36,7 @@ class CollectionIntro extends React.Component{
                     console.log(data.default)
                     return data.default
                 });
-                // console.log(Promise.resolve(pic[0]))
+                console.log(Promise.resolve(pic[0]))
                 console.log(pic)
                 return (
                     pic.map( (i,index) => (

@@ -119,7 +119,7 @@ class Collections extends React.Component{
             <View id='collections' flex justC='center' p='100px 0' bT='solid 1px rgba(170,170,170,0.5)'>
                 <View w='80%' >
                     <View tAlign='center' fontSize='35px' op='0.5'>COLLECTIONS</View>
-                    <View flex fW='wrap' justC='center' m='0px 100px'>
+                    <View flex fW='wrap' justC='center' m='0px 80px'>
                         {this.renderItem()}
                     </View>
                 </View>
