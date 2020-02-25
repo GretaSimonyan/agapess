@@ -36,11 +36,11 @@ class CollectionIntro extends React.Component{
                     console.log(data.default)
                     return data.default
                 });
-                console.log(Promise.resolve(pic[0]))
+                // console.log(Promise.resolve(pic[0]))
                 console.log(pic)
                 return (
                     pic.map( (i,index) => (
-                        <View key={index} m='12px 5px'>.
+                        <View key={index} m='12px 5px'>
                             <View onClick={() => this.toggleSlider(index,pic)}
                                 w='300px'
                                 h='300px'

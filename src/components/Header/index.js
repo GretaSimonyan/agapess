@@ -11,7 +11,7 @@ import {
 
 const SocialLink = styled.a`
     font-size: 29px;
-    ${ (props) => props.headerType == 2 ? `color: white` : `color: gray` }
+    ${ (props) => props.headerType === 2 ? `color: white` : `color: gray` }
 `;
 const Link = styled.a`
     margin: 15px;
@@ -19,7 +19,7 @@ const Link = styled.a`
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 3px
-    ${ (props) => props.headerType == 2 && `color: white` }
+    ${ (props) => props.headerType === 2 && `color: white` }
 `;
 
 class Header extends React.Component{
