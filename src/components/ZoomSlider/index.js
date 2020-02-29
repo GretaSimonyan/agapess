@@ -35,11 +35,6 @@ class ZoomSlider extends React.Component {
             initialSlide: this.props.showModalIndex,
             adaptiveHeight: true,
             adaptiveWidth: true,
-            // appendDots: dots => (
-            //     <View c='red'>
-            //       <ul> {dots} </ul>
-            //     </View>
-            //   )
         };
         // console.log(this.props.showModalIndex, this.props.arr);
         return(
@@ -47,12 +42,12 @@ class ZoomSlider extends React.Component {
                 <View z='99' w='100vw' h="100vh" bgColor='rgba(0,0,0,0.7)' pos='fixed' top='0' left='0'>
                     <ScrollOff/>
                     <Close onClick={this.props.onClose}
+                        flex
                         op='0.5'
+                        m='30px'
                         c='white'
                         fontSize='30px'
                         cursor='pointer'
-                        m='30px'
-                        flex
                         justC='flex-end'
                     >
                         <CloseButton/>
