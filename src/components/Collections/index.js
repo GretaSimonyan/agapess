@@ -21,7 +21,7 @@ import p10 from '../../assets/images/col10.jpg';
 const CollectionItem = styled(View)`
     &:hover {
         box-shadow: -1px -2px 25px 7px rgba(255, 112, 106, 0.4);
-        transform: scale(1.05)
+        transform: scale(1.03)
     }
     &:hover div {
         opacity: 1;
@@ -88,15 +88,16 @@ class Collections extends React.Component{
                 },
             ],
         }
-    }
+    };
+
     renderItem = () => (
         this.state.item.map( (item) => (
             <Link key={item.id} to={`/CollectionIntro/${item.id}`}>
                 <CollectionItem bgImg={item.src}
                     flex
                     tr='0.4s'
-                    w='300px'
-                    h='488px'
+                    w='250px'
+                    h='400px'
                     bRad='5px'
                     m='20px 10px'
                     justC='center'
@@ -113,13 +114,14 @@ class Collections extends React.Component{
                 </CollectionItem>
             </Link>
         ) )
-    )
+    );
+
     render(){
         return(
             <View id='collections' flex justC='center' p='100px 0' bT='solid 1px rgba(170,170,170,0.5)'>
                 <View w='80%' >
                     <View tAlign='center' fontSize='35px' op='0.5'>COLLECTIONS</View>
-                    <View flex fW='wrap' justC='center' m='0px 80px'>
+                    <View flex fW='wrap' justC='space-around'>
                         {this.renderItem()}
                     </View>
                 </View>

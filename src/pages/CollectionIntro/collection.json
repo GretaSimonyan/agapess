@@ -2,121 +2,120 @@
     {
         "id": 1,
         "pictures":[
-            "https://marketplace.canva.com/MADR_7yqZFU/1/thumbnail_large-1/canva-photo-of-man-sitting-on-rock-MADR_7yqZFU.jpg",
-            "https://images.pexels.com/photos/735308/pexels-photo-735308.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-            "https://becauseimaddicted.net/wp-content/uploads/2014/11/urban-outfitters-sweaters-photoshoot06.jpg",
-            "https://i.pinimg.com/originals/52/48/36/524836dcad2bf4129da558574f947c7b.jpg",
-            "https://i.pinimg.com/originals/6d/c8/7a/6dc87ad6f004abcdfee40c25299b9502.jpg",
-            "https://i.pinimg.com/originals/9d/00/5e/9d005e7bd520cb66917135c21efe3ea7.jpg",
-            "https://farm66.static.flickr.com/65535/48981524472_9002beac28_b.jpg"
+            "col1.jpg",
+            "col1.jpg",
+            "col1.jpg",
+            "col1.jpg",
+            "col1.jpg",
+            "col1.jpg"
         ],
         "title": "sweaters"
     },
     {
         "id": 2,
         "pictures":[
-            "col1",
-            "col1",
-            "col1",
-            "col1",
-            "col1",
-            "col1"
+            "col2.jpg",
+            "col2.jpg",
+            "col2.jpg",
+            "col2.jpg",
+            "col2.jpg",
+            "col2.jpg"
         ],
         "title": "blouses"
     },
     {
         "id": 3,
         "pictures":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "col3.jpg",
+            "col3.jpg",
+            "col3.jpg",
+            "col3.jpg",
+            "col3.jpg",
+            "col3.jpg"
         ],
         "title": "cardigans"
     },
     {
         "id": 4,
         "pictures":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "col4.jpg",
+            "col4.jpg",
+            "col4.jpg",
+            "col4.jpg",
+            "col4.jpg",
+            "col4.jpg"
         ],
         "title": "coats"
     },
     {
         "id": 5,
         "pictures":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "col5.jpg",
+            "col5.jpg",
+            "col5.jpg",
+            "col5.jpg",
+            "col5.jpg",
+            "col5.jpg"
         ],
         "title": "tunicas"
     },
     {
         "id": 6,
         "pictures":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "col6.jpg",
+            "col6.jpg",
+            "col6.jpg",
+            "col6.jpg",
+            "col6.jpg",
+            "col6.jpg"
         ],
         "title": "panchos"
     },
     {
         "id": 7,
         "pictures":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "col7.jpg",
+            "col7.jpg",
+            "col7.jpg",
+            "col7.jpg",
+            "col7.jpg",
+            "col7.jpg"
         ],
         "title": "shawls"
     },
     {
         "id": 8,
         "pictures":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "col8.jpg",
+            "col8.jpg",
+            "col8.jpg",
+            "col8.jpg",
+            "col8.jpg",
+            "col8.jpg"
         ],
         "title": "scarfs"
     },
     {
         "id": 9,
         "pictures":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "col9.jpg",
+            "col9.jpg",
+            "col9.jpg",
+            "col9.jpg",
+            "col9.jpg",
+            "col9.jpg"
         ],
         "title": "dresses"
     },
     {
         "id": 10,
         "pictures":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "col10.jpg",
+            "col10.jpg",
+            "col10.jpg",
+            "col10.jpg",
+            "col10.jpg",
+            "col10.jpg"
         ],
         "title": "gilets"
     }

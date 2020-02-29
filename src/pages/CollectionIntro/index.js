@@ -14,11 +14,26 @@ class CollectionIntro extends React.Component{
         this.state = {
             opend: false,
             showModalIndex: 1,
-            arr: []
+            arr: [],
+            images: []
         }
     };
     componentDidMount() {
-        window.scrollTo(0,0)
+        window.scrollTo(0,0);
+
+        for(let key in json){
+            if( this.props.match.params.id == json[key].id){
+                let imports = json[key].pictures.map( (img) => import(`../../assets/images/${img}`));
+
+                Promise.all(imports).then(data => {
+                    const pics = data.map(item => item.default);
+                    this.setState({
+                        images: pics
+                    });                   
+                });
+                
+            }
+        }
     };
     toggleSlider = (index,pic) => {
         this.setState(state => ({ 
@@ -28,35 +43,7 @@ class CollectionIntro extends React.Component{
             }
         ));
     };
-    renderItem = () => {
-        for(let key in json){
-            if( this.props.match.params.id == json[key].id){
-                let pic = json[key].pictures.map(async() => {
-                    const data = await import("../../assets/images/sweaters/col1.jpg")
-                    console.log(data.default)
-                    return data.default
-                });
-                // console.log(Promise.resolve(pic[0]))
-                console.log(pic)
-                return (
-                    pic.map( (i,index) => (
-                        <View key={index} m='12px 5px'>
-                            <View onClick={() => this.toggleSlider(index,pic)}
-                                w='300px'
-                                h='300px'
-                                bgImg={i}
-                                bgSize='cover'
-                                bgPos='center'
-                                cursor='pointer'
-                                bgRep='no-repeat'
-                            />
-                        </View>
-                        )
-                    )
-                )
-            }
-        }
-    };
+
     itemsInfo = () => {
         for(let key in json){
             if( this.props.match.params.id == json[key].id){
@@ -64,24 +51,46 @@ class CollectionIntro extends React.Component{
             }
         }
     };
+
+    renderImages = () => {
+        const { images } = this.state;
+
+        return (
+            images.map( (i, index) => (
+                <View key={index} m='12px 5px'>
+                    <View onClick={() => this.toggleSlider(index, images)}
+                        w='300px'
+                        h='300px'
+                        bgImg={i}
+                        bgSize='cover'
+                        bgPos='center'
+                        cursor='pointer'
+                        bgRep='no-repeat'
+                    />
+                </View>
+                )
+            )
+        )
+    }
     
     render(){
-        // console.log(this.state.showModalIndex)
         return(
             <>
                 <Header/>
-                <View p='100px 0' p_m='200px 0' p_s='200px 0' >
+                <View p='100px 0' p_m='200px 0' p_s='200px 0' minH='94vh' >
                     <View tAlign='center' tTf='uppercase' fontSize='32px' op='0.5'>
                         {this.itemsInfo()}
                     </View>
                     <View id='item' flex fW='wrap' justC='center' m='0px 100px'>
-                        {this.renderItem()}
-                        {this.state.opend &&
-                            <ZoomSlider 
-                                onClose={this.toggleSlider}
-                                showModalIndex={this.state.showModalIndex}
-                                arr={this.state.arr}
-                            />
+                        {this.renderImages()}
+                        {
+                            this.state.opend && (
+                               <ZoomSlider 
+                                    onClose={this.toggleSlider}
+                                    showModalIndex={this.state.showModalIndex}
+                                    arr={this.state.arr}
+                                /> 
+                            )
                         }
                     </View>
                 </View>

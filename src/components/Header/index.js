@@ -32,7 +32,7 @@ class Header extends React.Component{
     }
     componentDidMount() {
         window.addEventListener('scroll', () => {
-            if ( window.scrollY >= 100 ){
+            if ( window.scrollY >= 50 ){
                 this.setState(() => ({
                     bgcolor: "#ff706a",
                     headerType: 2,
