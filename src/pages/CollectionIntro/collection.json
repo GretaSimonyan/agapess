@@ -2,120 +2,112 @@
     {
         "id": 1,
         "pictures":[
-            "col1.jpg",
-            "col1.jpg",
-            "col1.jpg",
-            "col1.jpg",
-            "col1.jpg",
-            "col1.jpg"
+            "s1.JPG",
+            "s2.JPG",
+            "s3.JPG",
+            "s4.JPG",
+            "s5.JPG",
+            "s6.JPG"
         ],
         "title": "sweaters"
     },
     {
         "id": 2,
         "pictures":[
-            "col2.jpg",
-            "col2.jpg",
-            "col2.jpg",
-            "col2.jpg",
-            "col2.jpg",
-            "col2.jpg"
+            "bl1.JPG",
+            "bl2.JPG",
+            "bl3.JPG",
+            "bl4.JPG",
+            "bl5.JPG"
         ],
         "title": "blouses"
     },
     {
         "id": 3,
         "pictures":[
-            "col3.jpg",
-            "col3.jpg",
-            "col3.jpg",
-            "col3.jpg",
-            "col3.jpg",
-            "col3.jpg"
+            "car1.JPG",
+            "car2.JPG",
+            "car3.JPG",
+            "car4.JPG",
+            "car5.JPG"
         ],
         "title": "cardigans"
     },
     {
         "id": 4,
         "pictures":[
-            "col4.jpg",
-            "col4.jpg",
-            "col4.jpg",
-            "col4.jpg",
-            "col4.jpg",
-            "col4.jpg"
+            "co1.jpg",
+            "co2.jpg",
+            "co3.jpg",
+            "co4.jpg",
+            "co5.jpg",
+            "co6.jpg",
+            "co7.jpg",
+            "co8.jpg"
         ],
         "title": "coats"
     },
     {
         "id": 5,
         "pictures":[
-            "col5.jpg",
-            "col5.jpg",
-            "col5.jpg",
-            "col5.jpg",
-            "col5.jpg",
-            "col5.jpg"
+            "t1.JPG",
+            "t2.JPG",
+            "t3.JPG"
         ],
         "title": "tunicas"
     },
     {
         "id": 6,
         "pictures":[
-            "col6.jpg",
-            "col6.jpg",
-            "col6.jpg",
-            "col6.jpg",
-            "col6.jpg",
-            "col6.jpg"
+            "p1.JPG",
+            "p2.JPG"
         ],
         "title": "panchos"
     },
     {
         "id": 7,
         "pictures":[
-            "col7.jpg",
-            "col7.jpg",
-            "col7.jpg",
-            "col7.jpg",
-            "col7.jpg",
-            "col7.jpg"
+            "sh1.JPG",
+            "sh2.JPG",
+            "sh3.JPG",
+            "sh4.JPG",
+            "sh5.JPG",
+            "sh6.JPG",
+            "sh7.JPG",
+            "sh8.JPG"
         ],
         "title": "shawls"
     },
     {
         "id": 8,
         "pictures":[
-            "col8.jpg",
-            "col8.jpg",
-            "col8.jpg",
-            "col8.jpg",
-            "col8.jpg",
-            "col8.jpg"
+            "sc1.JPG",
+            "sc2.JPG",
+            "sc3.JPG",
+            "sc4.JPG",
+            "sc5.JPG",
+            "sc6.JPG",
+            "sc7.JPG",
+            "sc8.JPG",
+            "sc9.JPG",
+            "sc10.JPG"
         ],
         "title": "scarfs"
     },
     {
         "id": 9,
         "pictures":[
-            "col9.jpg",
-            "col9.jpg",
-            "col9.jpg",
-            "col9.jpg",
-            "col9.jpg",
-            "col9.jpg"
+            "d1.JPG",
+            "d2.JPG",
+            "d3.jpg"
         ],
         "title": "dresses"
     },
     {
         "id": 10,
         "pictures":[
-            "col10.jpg",
-            "col10.jpg",
-            "col10.jpg",
-            "col10.jpg",
-            "col10.jpg",
-            "col10.jpg"
+            "g1.jpg",
+            "g2.jpg"
         ],
         "title": "gilets"
     }

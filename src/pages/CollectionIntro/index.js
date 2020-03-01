@@ -21,7 +21,8 @@ class CollectionIntro extends React.Component{
         window.scrollTo(0,0);
         for(let key in json){
             if( this.props.match.params.id == json[key].id){
-                let imports = json[key].pictures.map( (img) => import(`../../assets/images/${img}`));
+                let title = json[key].title;
+                let imports = json[key].pictures.map( (img) => import(`../../assets/images/${title}/${img}`));
                 Promise.all(imports).then(data => {
                     const pics = data.map(item => item.default);
                     this.setState({
@@ -70,7 +71,7 @@ class CollectionIntro extends React.Component{
     render(){
         return(
             <>
-                <Header/>
+                <Header showMenu={false} />
                 <View p='100px 0' p_m='200px 0' p_s='200px 0' minH='94vh' >
                     <View tAlign='center' tTf='uppercase' fontSize='32px' op='0.5'>
                         {this.itemsInfo()}

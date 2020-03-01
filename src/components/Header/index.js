@@ -30,6 +30,9 @@ class Header extends React.Component{
             headerType: 1,
         }
     }
+    static defaultProps = {
+        showMenu: true
+    }
     componentDidMount() {
         window.addEventListener('scroll', () => {
             if ( window.scrollY >= 50 ){
@@ -81,11 +84,14 @@ class Header extends React.Component{
                             />
                         </NavLink>
                     </View>
-                    <View flex alignI='center' mT_m="15px" mT_s="10px" fontSize_m='15px' fontSize_s='12px'>
-                        <View><Link headerType={headerType} href='#about'>About</Link></View>
-                        <View><Link headerType={headerType} href='#collections'>Collections</Link></View>
-                        <View><Link headerType={headerType} href='#contact'>Contact</Link></View>
-                    </View>
+                    { this.props.showMenu && (
+                        <View flex alignI='center' mT_m="15px" mT_s="10px" fontSize_m='15px' fontSize_s='12px'>
+                            <View><Link headerType={headerType} href='#about'>About</Link></View>
+                            <View><Link headerType={headerType} href='#collections'>Collections</Link></View>
+                            <View><Link headerType={headerType} href='#contact'>Contact</Link></View>
+                        </View>
+                    ) }
+                    
                     <View flex justC="space-between" alignI='center'>
                         <View m='10px' m_m="2px" m_s="2px">
                             <SocialLink headerType={headerType} href='#'>

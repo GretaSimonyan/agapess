@@ -17,8 +17,8 @@ function AboutUs(){
             bgSize_m='100%'
             bgSize_s='100%' 
             bgPos='left'
-            alignI='center'
             justC='center'
+            alignI='center'
             bgRep='no-repeat'
             bgColor='#ffb5b2'
         >
@@ -28,10 +28,10 @@ function AboutUs(){
                 justC='flex-end' 
                 c_m='white'
                 c_s='white'
-                bgColor_m='rgba(0,0,0,0.3)' 
-                bgColor_s='rgba(0,0,0,0.3)' 
+                bgColor_m='rgba(0,0,0,0.5)' 
+                bgColor_s='rgba(0,0,0,0.5)' 
                 >
-                <View flex w='50%' w_m='100%' w_s='100%' fD='column'>
+                <View flex w='50%' w_m='100%' w_s='100%' fD='column' p='10px'>
                     <Text fontSize='18px' m='0 auto 20px auto'>
                         <h1>About Us</h1>
                     </Text>

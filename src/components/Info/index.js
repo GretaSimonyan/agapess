@@ -9,16 +9,16 @@ function Info(){
     return(
         <View 
             flex 
-            alignI='center' 
-            justC='center' 
+            p='100px 0' 
             bgImg={tel} 
-            bgRep='no-repeat' 
             bgSize='45%' 
+            bgPos='left' 
+            justC='center' 
+            alignI='center' 
             bgSize_m='100%' 
             bgSize_s='100%' 
-            bgPos='left' 
-            bgPos_m='left top' 
-            p='75px 0' 
+            bgRep='no-repeat' 
+            // bgPos_m='left top' 
         >
             <View flex 
                 w='80%' 
@@ -26,14 +26,12 @@ function Info(){
                 bRad='8px' 
                 c_m='white'
                 c_s='white'
-                bgColor_m='rgba(0,0,0,0.3)' 
-                bgColor_s='rgba(0,0,0,0.3)' 
+                bgColor_m='rgba(0,0,0,0.5)' 
+                bgColor_s='rgba(0,0,0,0.5)' 
                 >
-                <View w='50%' w_m='100%' w_s='100%'>
-                    <Text fontSize='14px' lh='1.65'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <View w='50%' w_m='100%' w_s='100%' p='15px'>
+                    <Text fontSize='14px' lh='1.65'>
+                        If you want to have the best kintted outfit that is unique and different from another knitted clothes, you have to wear Studios 21. Our products are unique and one of a kind, one another is a unique piece of art. Who want to act different has to wear our knitted clothes. Do not hesitate to contact us and get your unique masterpiece. Hope you’ll find your own clothes. Have a great shopping with us.
                     </Text>
                 </View>
             </View>

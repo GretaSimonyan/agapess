@@ -4,7 +4,7 @@ import newcollection from '../../assets/images/newcollection.jpg';
 
 function NewColl(){
     return(
-        <View mB='90px'>
+        <View mB='70px'>
             <View bgImg={newcollection}
                 w='100%' 
                 h='50vw' 

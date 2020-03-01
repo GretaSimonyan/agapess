@@ -11,7 +11,7 @@ import photo1 from '../../assets/images/photo1.jpg';
 
 function Gallery (){
     return(
-        <View mT='90px'>
+        <View mT='70px'>
             <View bgImg={photo1} 
                 w='100%' 
                 h='35vw' 
