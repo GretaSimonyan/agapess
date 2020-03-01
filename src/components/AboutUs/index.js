@@ -11,7 +11,7 @@ function AboutUs(){
         <View id="about"
             flex
             fD='row'
-            p='100px 0'
+            p='110px 0'
             bgImg={red}
             bgSize='42%'
             bgPos='left'

@@ -96,8 +96,8 @@ class Collections extends React.Component{
                 <CollectionItem bgImg={item.src}
                     flex
                     tr='0.4s'
-                    w='250px'
-                    h='400px'
+                    w='255px'
+                    h='420px'
                     bRad='5px'
                     m='20px 10px'
                     justC='center'

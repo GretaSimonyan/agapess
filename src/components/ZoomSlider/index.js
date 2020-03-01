@@ -44,15 +44,15 @@ class ZoomSlider extends React.Component {
                     <Close onClick={this.props.onClose}
                         flex
                         op='0.5'
-                        m='30px'
                         c='white'
                         fontSize='30px'
                         cursor='pointer'
                         justC='flex-end'
+                        m='7px 65px 0 65px'
                     >
                         <CloseButton/>
                     </Close>
-                    <View w='50%' m='0 auto 30px auto' >
+                    <View w='50%' m='0 auto'>
                         {this.props.children}
                         <View w='100%' m='auto' p>
                             <Slider {...settings}>
@@ -60,7 +60,7 @@ class ZoomSlider extends React.Component {
                                     this.props.arr.map( (i) =>(
                                         <View bgImg={i} 
                                             w='100%' 
-                                            h='85vh' 
+                                            h='90vh' 
                                             bgPos='center'
                                             bgSize='contain' 
                                             bgRep='no-repeat' 

@@ -59,6 +59,8 @@ class Header extends React.Component{
                 w='100%'
                 m="0 auto"
                 p="15px 0"
+                p_m="10px 0 0 0"
+                p_s="5px 0 0 0"
                 pos='fixed'
                 justC='center'
                 alignI='center'
@@ -70,8 +72,8 @@ class Header extends React.Component{
                     <View>
                         <NavLink to='/'>
                             <View onClick={this.scrollHome}
-                                h='50px'
-                                w='125px'
+                                h='45px'
+                                w='120px'
                                 bgPos='center'
                                 bgSize='contain'
                                 bgRep='no-repeat'
@@ -79,18 +81,18 @@ class Header extends React.Component{
                             />
                         </NavLink>
                     </View>
-                    <View flex alignI='center' mT_m="20px">
+                    <View flex alignI='center' mT_m="15px" mT_s="10px" fontSize_m='15px' fontSize_s='12px'>
                         <View><Link headerType={headerType} href='#about'>About</Link></View>
                         <View><Link headerType={headerType} href='#collections'>Collections</Link></View>
                         <View><Link headerType={headerType} href='#contact'>Contact</Link></View>
                     </View>
                     <View flex justC="space-between" alignI='center'>
-                        <View m='10px'>
+                        <View m='10px' m_m="2px" m_s="2px">
                             <SocialLink headerType={headerType} href='#'>
                                 <Fb/>
                             </SocialLink>
                         </View>
-                        <View m='10px'>
+                        <View m='10px' m_m="2px" m_s="2px">
                             <SocialLink headerType={headerType} href='#'>
                                 <Insta/>
                             </SocialLink>
