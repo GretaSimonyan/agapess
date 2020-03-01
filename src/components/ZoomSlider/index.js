@@ -54,7 +54,7 @@ class ZoomSlider extends React.Component {
                     </Close>
                     <View w='50%' m='0 auto'>
                         {this.props.children}
-                        <View w='100%' m='auto' p>
+                        <View w='100%' m='auto'>
                             <Slider {...settings}>
                                 {
                                     this.props.arr.map( (i) =>(

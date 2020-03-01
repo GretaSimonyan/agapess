@@ -13,15 +13,25 @@ function AboutUs(){
             fD='row'
             p='110px 0'
             bgImg={red}
-            bgSize='42%'
+            bgSize='50%'
+            bgSize_m='100%'
+            bgSize_s='100%' 
             bgPos='left'
             alignI='center'
             justC='center'
             bgRep='no-repeat'
             bgColor='#ffb5b2'
         >
-            <View w='80%' flex justC='flex-end'>
-                <View flex w='50%' fD='column'>
+            <View w='80%' 
+                flex 
+                bRad='8px' 
+                justC='flex-end' 
+                c_m='white'
+                c_s='white'
+                bgColor_m='rgba(0,0,0,0.3)' 
+                bgColor_s='rgba(0,0,0,0.3)' 
+                >
+                <View flex w='50%' w_m='100%' w_s='100%' fD='column'>
                     <Text fontSize='18px' m='0 auto 20px auto'>
                         <h1>About Us</h1>
                     </Text>
