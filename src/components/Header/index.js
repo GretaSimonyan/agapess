@@ -15,11 +15,19 @@ const SocialLink = styled.a`
 `;
 const Link = styled.a`
     margin: 15px;
+    padding: 5px 8px;
     color: gray;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 3px
+    letter-spacing: 3px;
     ${ (props) => props.headerType === 2 && `color: white` }
+    &:hover{
+        border: outset 1.5px rgba(255, 255, 255, 0.8);
+        border-radius: 27px;
+        box-shadow: -1px -3px 10px 3px rgba(255,13,13, 0.4);
+        background: rgb(255,13,13);
+        background: linear-gradient(324deg, rgba(255,13,13,0.32816876750700286) 29%, rgba(235,0,0,0.6755077030812324) 52%, rgba(255,104,104,0.7147233893557423) 78%);
+    }
 `;
 
 class Header extends React.Component{
@@ -76,7 +84,7 @@ class Header extends React.Component{
                         <NavLink to='/'>
                             <View onClick={this.scrollHome}
                                 h='45px'
-                                w='120px'
+                                w='110px'
                                 bgPos='center'
                                 bgSize='contain'
                                 bgRep='no-repeat'
@@ -85,7 +93,7 @@ class Header extends React.Component{
                         </NavLink>
                     </View>
                     { this.props.showMenu && (
-                        <View flex alignI='center' mT_m="15px" mT_s="10px" fontSize_m='15px' fontSize_s='12px'>
+                        <View flex alignI='center' mT_m="10px" mT_s="10px" fontSize='14.5px' fontSize_m='13px' fontSize_s='10px'>
                             <View><Link headerType={headerType} href='#about'>About</Link></View>
                             <View><Link headerType={headerType} href='#collections'>Collections</Link></View>
                             <View><Link headerType={headerType} href='#contact'>Contact</Link></View>
@@ -93,7 +101,7 @@ class Header extends React.Component{
                     ) }
                     
                     <View flex justC="space-between" alignI='center'>
-                        <View m='10px' m_m="2px" m_s="2px">
+                        <View m='10px' m_m="5px" m_s="5px">
                             <SocialLink headerType={headerType} href='#'>
                                 <Fb/>
                             </SocialLink>

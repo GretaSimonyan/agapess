@@ -11,9 +11,9 @@ function AboutUs(){
         <View id="about"
             flex
             fD='row'
-            p='110px 0'
+            p='100px 0'
             bgImg={red}
-            bgSize='50%'
+            bgSize='35%'
             bgSize_m='100%'
             bgSize_s='100%' 
             bgPos='left'
@@ -35,7 +35,7 @@ function AboutUs(){
                     <Text fontSize='18px' m='0 auto 20px auto'>
                         <h1>About Us</h1>
                     </Text>
-                    <Text fontSize='14px' lh='1.65'>
+                    <Text fontSize='12px' lh='1.65'>
                         We are happy to introduce our new brand, named Studios 21 after ArtStar Illusions which was 
                         found by Astghik Sahakyan in 1980 in Yerevan, Armenia. In 1980 the journey become since today.  
                         As you can see our company is almost 40 years  old.  Our handmade crafts are only made of qualified 

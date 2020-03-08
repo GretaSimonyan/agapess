@@ -9,7 +9,8 @@
             "s5.JPG",
             "s6.JPG"
         ],
-        "title": "sweaters"
+        "title": "sweaters",
+        "name": "sweaters"
     },
     {
         "id": 2,
@@ -20,7 +21,8 @@
             "bl4.JPG",
             "bl5.JPG"
         ],
-        "title": "blouses"
+        "title": "blouses",
+        "name": "blouses"
     },
     {
         "id": 3,
@@ -31,7 +33,8 @@
             "car4.JPG",
             "car5.JPG"
         ],
-        "title": "cardigans"
+        "title": "cardigans",
+        "name": "cardigans"
     },
     {
         "id": 4,
@@ -45,7 +48,8 @@
             "co7.jpg",
             "co8.jpg"
         ],
-        "title": "coats"
+        "title": "coats",
+        "name": "coats"
     },
     {
         "id": 5,
@@ -54,7 +58,8 @@
             "t2.JPG",
             "t3.JPG"
         ],
-        "title": "tunicas"
+        "title": "tunicas",
+        "name": "tunicas"
     },
     {
         "id": 6,
@@ -62,21 +67,8 @@
             "p1.JPG",
             "p2.JPG"
         ],
-        "title": "panchos"
-    },
-    {
-        "id": 7,
-        "pictures":[
-            "sh1.JPG",
-            "sh2.JPG",
-            "sh3.JPG",
-            "sh4.JPG",
-            "sh5.JPG",
-            "sh6.JPG",
-            "sh7.JPG",
-            "sh8.JPG"
-        ],
-        "title": "shawls"
+        "title": "panchos",
+        "name": "panchos"
     },
     {
         "id": 8,
@@ -90,9 +82,18 @@
             "sc7.JPG",
             "sc8.JPG",
             "sc9.JPG",
-            "sc10.JPG"
+            "sc10.JPG",
+            "sh1.JPG",
+            "sh2.JPG",
+            "sh3.JPG",
+            "sh4.JPG",
+            "sh5.JPG",
+            "sh6.JPG",
+            "sh7.JPG",
+            "sh8.JPG"
         ],
-        "title": "scarfs"
+        "title": "scarfs-shawls",
+        "name": "scarfs"
     },
     {
         "id": 9,
@@ -101,7 +102,8 @@
             "d2.JPG",
             "d3.jpg"
         ],
-        "title": "dresses"
+        "title": "dresses",
+        "name": "dresses"
     },
     {
         "id": 10,
@@ -109,6 +111,7 @@
             "g1.jpg",
             "g2.jpg"
         ],
-        "title": "gilets"
+        "title": "gilets",
+        "name": "gilets"
     }
 ]
