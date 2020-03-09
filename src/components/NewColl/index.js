@@ -4,10 +4,10 @@ import newcollection from '../../assets/images/newcollection.jpg';
 
 function NewColl(){
     return(
-        <View mB='70px'>
+        <View>
             <View bgImg={newcollection}
                 w='100%' 
-                h='50vw' 
+                h='45vw' 
                 bgPos='center' 
                 bgSize='cover' 
                 bgRep='no-repeat' 

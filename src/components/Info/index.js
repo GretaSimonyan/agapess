@@ -7,21 +7,24 @@ import tel from '../../assets/images/tel.jpg';
 
 function Info(){
     return(
-        <View 
-            flex 
-            p='100px 0' 
+        <View flex 
+            fD='row'
+            p='20px 0' 
             bgImg={tel} 
-            bgSize='45%' 
             bgPos='left' 
             justC='center' 
             alignI='center' 
-            bgSize_m='100%' 
-            bgSize_s='100%' 
+            bgPos_m='center' 
+            bgPos_s='center' 
             bgRep='no-repeat' 
-            // bgPos_m='left top' 
+            bgSize='contain' 
+            bgSize_m='contain' 
+            bgSize_s='contain' 
         >
             <View flex 
                 w='80%' 
+                w_m='95%' 
+                w_s='95%'
                 justC='flex-end'
                 bRad='8px' 
                 c_m='white'

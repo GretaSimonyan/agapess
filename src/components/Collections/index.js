@@ -87,18 +87,31 @@ class Collections extends React.Component{
                 <CollectionItem bgImg={item.src}
                     flex
                     tr='0.4s'
-                    w='255px'
-                    h='420px'
+                    w='245px'
+                    h='410px'
                     bRad='5px'
-                    m='20px 10px'
+                    w_m='215px'
+                    h_m='380px'
+                    w_s='175px'
+                    h_s='340px'
                     justC='center'
-                    alignI='flex-end'
                     bgSize='cover'
-                    bgRep='no-repeat'
                     bgPos='center'
+                    alignI='flex-end'
+                    bgRep='no-repeat'
+                    m='20px 10px 0px 0px'
+                    m_m='20px 5px 0px 0px'
+                    m_s='20px 5px 0px 0px'
                 >
-                    <View flex justC='center' tr='0.4s' bgColor='rgba(0,0,0,0.4)' w='100%'>
-                        <Text fontSize='28px' fontW='700' c='white' tTf='uppercase' p='10px 0'>
+                    <View flex justC='center' bgColor='rgba(0,0,0,0.4)' w='100%'>
+                        <Text fontW='700' 
+                            c='white' 
+                            p='10px 0'
+                            tTf='uppercase' 
+                            fontSize='27px' 
+                            fontSize_m='23px' 
+                            fontSize_s='19px' 
+                        >
                             {item.title}
                         </Text>
                     </View>
@@ -109,9 +122,9 @@ class Collections extends React.Component{
 
     render(){
         return(
-            <View id='collections' flex justC='center' p='100px 0' bT='solid 1px rgba(170,170,170,0.5)'>
+            <View id='collections' flex justC='center' p='100px 0px 50px 0px' bT='solid 1px rgba(170,170,170,0.5)'>
                 <View w='80%' >
-                    <View tAlign='center' fontSize='35px' op='0.5'>COLLECTIONS</View>
+                    <View tAlign='center' fontSize='32px' op='0.5'>COLLECTIONS</View>
                     <View flex fW='wrap' justC='space-around'>
                         {this.renderItem()}
                     </View>

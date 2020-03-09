@@ -19,34 +19,13 @@ class Carousel extends React.Component{
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 3000,
-            // variableWidth: true
-            // responsive: [
-            //     {
-            //       breakpoint: 1024,
-            //       settings: {
-                    
-            //       }
-            //     },
-            //     {
-            //       breakpoint: 600,
-            //       settings: {
-                    
-            //       }
-            //     },
-            //     {
-            //       breakpoint: 480,
-            //       settings: {
-                    
-            //       }
-            //     }
-            //   ]
           };
         return(
-            <View overflow='hidden' pos='relative'>
+            <View overflow='hidden' pos='relative' >
                 <Slider {...settings}>
-                    <View bgImg={cover1} w='100%' h='100vh' bgSize='cover' />
-                    <View bgImg={cover2} w='100%' h='100vh' bgSize='cover' />
-                    <View bgImg={cover3} w='100%' h='100vh' bgSize='cover' />
+                    <View bgImg={cover1} w='100%' h='100vh' h_m='60vw' h_s='60vw' bgSize='cover'/>
+                    <View bgImg={cover2} w='100%' h='100vh' h_m='60vw' h_s='60vw' bgSize='cover'/>
+                    <View bgImg={cover3} w='100%' h='100vh' h_m='60vw' h_s='60vw' bgSize='cover'/>
                 </Slider>
             </View>
         )

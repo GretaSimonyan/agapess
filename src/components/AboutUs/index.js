@@ -11,28 +11,30 @@ function AboutUs(){
         <View id="about"
             flex
             fD='row'
-            p='100px 0'
+            p='75px 0'
             bgImg={red}
             bgSize='35%'
-            bgSize_m='100%'
-            bgSize_s='100%' 
             bgPos='left'
             justC='center'
             alignI='center'
+            bgSize_m='90%'
+            bgSize_s='100%' 
             bgRep='no-repeat'
             bgColor='#ffb5b2'
         >
-            <View w='80%' 
-                flex 
-                bRad='8px' 
-                justC='flex-end' 
+            <View w='80%'
+                w_m='98%' 
+                w_s='99.5%'
+                flex
+                bRad='8px'
                 c_m='white'
                 c_s='white'
-                bgColor_m='rgba(0,0,0,0.5)' 
-                bgColor_s='rgba(0,0,0,0.5)' 
+                justC='flex-end'
+                bgColor_m='rgba(0,0,0,0.5)'
+                bgColor_s='rgba(0,0,0,0.5)'
                 >
                 <View flex w='50%' w_m='100%' w_s='100%' fD='column' p='10px'>
-                    <Text fontSize='18px' m='0 auto 20px auto'>
+                    <Text fontSize='17px' m='0 auto 20px auto'>
                         <h1>About Us</h1>
                     </Text>
                     <Text fontSize='12px' lh='1.65'>

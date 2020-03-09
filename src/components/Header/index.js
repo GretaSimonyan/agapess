@@ -79,7 +79,7 @@ class Header extends React.Component{
                 bgColor={this.state.bgcolor}
                 boxSh='0px 11px 32px -9px rgba(0, 0, 0, 0.4)'
             >
-                <View w='80%' flex justC='space-between' alignI="center" fD_m="column" fD_s='column'>
+                <View w='80%' flex justC='space-between' alignI="center" fW_m="wrap" fW_s='wrap'>
                     <View>
                         <NavLink to='/'>
                             <View onClick={this.scrollHome}
@@ -93,20 +93,29 @@ class Header extends React.Component{
                         </NavLink>
                     </View>
                     { this.props.showMenu && (
-                        <View flex alignI='center' mT_m="10px" mT_s="10px" fontSize='14.5px' fontSize_m='13px' fontSize_s='10px'>
+                        <View flex 
+                            order_m='1' 
+                            order_s='1'
+                            alignI='center' 
+                            justC='center'
+                            fontSize='14.5px' 
+                            fontSize_m='13px' 
+                            fontSize_s='10px' 
+                            m_m="10px 0px 10px 0px" 
+                            m_s="10px 0px 10px 0px" 
+                        >
                             <View><Link headerType={headerType} href='#about'>About</Link></View>
                             <View><Link headerType={headerType} href='#collections'>Collections</Link></View>
                             <View><Link headerType={headerType} href='#contact'>Contact</Link></View>
                         </View>
                     ) }
-                    
                     <View flex justC="space-between" alignI='center'>
-                        <View m='10px' m_m="5px" m_s="5px">
+                        <View m='10px' m_m="5px 5px 0px 0px" m_s="2px 2px 0px 0px">
                             <SocialLink headerType={headerType} href='#'>
                                 <Fb/>
                             </SocialLink>
                         </View>
-                        <View m='10px' m_m="2px" m_s="2px">
+                        <View m='10px' m_m="5px 5px 0px 0px" m_s="2px 2px 0px 0px">
                             <SocialLink headerType={headerType} href='#'>
                                 <Insta/>
                             </SocialLink>
