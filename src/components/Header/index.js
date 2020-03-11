@@ -4,6 +4,7 @@ import logoWhite from '../../assets/images/logoWhite.png';
 import logoGray from '../../assets/images/logoGray.png';
 import { NavLink } from 'react-router-dom';
 import {TiSocialFacebookCircular as Fb, TiSocialInstagramCircular as Insta} from "react-icons/ti";
+import Flip from 'react-reveal/Flip';
 
 import {
     View,
@@ -22,11 +23,9 @@ const Link = styled.a`
     letter-spacing: 3px;
     ${ (props) => props.headerType === 2 && `color: white` }
     &:hover{
-        border: outset 1.5px rgba(255, 255, 255, 0.8);
         border-radius: 27px;
-        box-shadow: -1px -3px 10px 3px rgba(255,13,13, 0.4);
-        background: rgb(255,13,13);
-        background: linear-gradient(324deg, rgba(255,13,13,0.32816876750700286) 29%, rgba(235,0,0,0.6755077030812324) 52%, rgba(255,104,104,0.7147233893557423) 78%);
+        box-shadow: -1px -3px 10px 3px #f8f8f866;
+        background: linear-gradient(341deg,rgba(255,13,13,0.42) 8%,rgba(235,0,0,0.78) 44%,rgba(255,104,104,0.09) 86%);
     }
 `;
 
@@ -80,34 +79,38 @@ class Header extends React.Component{
                 boxSh='0px 11px 32px -9px rgba(0, 0, 0, 0.4)'
             >
                 <View w='80%' flex justC='space-between' alignI="center" fW_m="wrap" fW_s='wrap'>
-                    <View>
-                        <NavLink to='/'>
-                            <View onClick={this.scrollHome}
-                                h='45px'
-                                w='110px'
-                                bgPos='center'
-                                bgSize='contain'
-                                bgRep='no-repeat'
-                                bgImg={ headerType === 2 ? logoWhite : logoGray }
-                            />
-                        </NavLink>
-                    </View>
-                    { this.props.showMenu && (
-                        <View flex 
-                            order_m='1' 
-                            order_s='1'
-                            alignI='center' 
-                            justC='center'
-                            fontSize='14.5px' 
-                            fontSize_m='13px' 
-                            fontSize_s='10px' 
-                            m_m="10px 0px 10px 0px" 
-                            m_s="10px 0px 10px 0px" 
-                        >
-                            <View><Link headerType={headerType} href='#about'>About</Link></View>
-                            <View><Link headerType={headerType} href='#collections'>Collections</Link></View>
-                            <View><Link headerType={headerType} href='#contact'>Contact</Link></View>
+                    <Flip left>
+                        <View>
+                            <NavLink to='/'>
+                                <View onClick={this.scrollHome}
+                                    h='45px'
+                                    w='110px'
+                                    bgPos='center'
+                                    bgSize='contain'
+                                    bgRep='no-repeat'
+                                    bgImg={ headerType === 2 ? logoWhite : logoGray }
+                                />
+                            </NavLink>
                         </View>
+                    </Flip>
+                    { this.props.showMenu && (
+                        <Flip left cascade>
+                            <View flex 
+                                order_m='1' 
+                                order_s='1'
+                                justC='center'
+                                alignI='center' 
+                                fontSize='14.5px' 
+                                fontSize_m='13px' 
+                                fontSize_s='10px' 
+                                m_m="10px 0px 10px 0px" 
+                                m_s="10px 0px 10px 0px" 
+                            >
+                                <View><Link headerType={headerType} href='#about'>About</Link></View>
+                                <View><Link headerType={headerType} href='#collections'>Collections</Link></View>
+                                <View><Link headerType={headerType} href='#contact'>Contact</Link></View>
+                            </View>
+                        </Flip>
                     ) }
                     <View flex justC="space-between" alignI='center'>
                         <View m='10px' m_m="5px 5px 0px 0px" m_s="2px 2px 0px 0px">

@@ -36,7 +36,6 @@ class ZoomSlider extends React.Component {
             adaptiveHeight: true,
             adaptiveWidth: true,
         };
-        // console.log(this.props.showModalIndex, this.props.arr);
         return(
             ReactDOM.createPortal(
                 <View z='99' w='100vw' h="100vh" bgColor='rgba(0,0,0,0.7)' pos='fixed' top='0' left='0'>

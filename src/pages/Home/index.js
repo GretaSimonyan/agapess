@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import { 
     Header, 
     Carousel,
@@ -16,10 +17,16 @@ function Home() {
             <Header/>
             <Carousel/>
             <AboutUs/>
-            <Collections/>
-            <NewColl/>
+            <Fade bottom>
+                <Collections/>
+            </Fade>
+            <Fade right>
+                <NewColl/>
+            </Fade>
             <Info/>
-            <Gallery/>
+            <Fade right>
+                <Gallery/>
+            </Fade>
             <Footer/>
         </div>
     )
