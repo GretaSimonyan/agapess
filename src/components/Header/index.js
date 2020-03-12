@@ -94,23 +94,23 @@ class Header extends React.Component{
                         </View>
                     </Flip>
                     { this.props.showMenu && (
-                        <Flip left cascade>
-                            <View flex 
-                                order_m='1' 
-                                order_s='1'
-                                justC='center'
-                                alignI='center' 
-                                fontSize='14.5px' 
-                                fontSize_m='13px' 
-                                fontSize_s='10px' 
-                                m_m="10px 0px 10px 0px" 
-                                m_s="10px 0px 10px 0px" 
-                            >
+                        <View flex 
+                            order_m='1' 
+                            order_s='1'
+                            justC='center'
+                            alignI='center' 
+                            fontSize='14.5px' 
+                            fontSize_m='13px' 
+                            fontSize_s='10px' 
+                            m_m="10px 0px 10px 0px" 
+                            m_s="10px 0px 10px 0px" 
+                        >
+                            <Flip left cascade>
                                 <View><Link headerType={headerType} href='#about'>About</Link></View>
                                 <View><Link headerType={headerType} href='#collections'>Collections</Link></View>
                                 <View><Link headerType={headerType} href='#contact'>Contact</Link></View>
-                            </View>
-                        </Flip>
+                            </Flip>
+                        </View>
                     ) }
                     <View flex justC="space-between" alignI='center'>
                         <View m='10px' m_m="5px 5px 0px 0px" m_s="2px 2px 0px 0px">
