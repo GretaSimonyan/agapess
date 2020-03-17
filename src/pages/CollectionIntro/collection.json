@@ -84,6 +84,16 @@
         "name": "panchos"
     },
     {
+        "id": 7,
+        "pictures":[
+            "d1.JPG",
+            "d2.JPG",
+            "d3.jpg"
+        ],
+        "title": "sets",
+        "name": "sets"
+    },
+    {
         "id": 8,
         "pictures":[
             "sc1.JPG",
