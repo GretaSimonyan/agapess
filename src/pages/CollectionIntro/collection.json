@@ -6,8 +6,7 @@
             "s2.JPG",
             "s3.JPG",
             "s4.JPG",
-            "s5.JPG",
-            "s6.JPG"
+            "s5.JPG"
         ],
         "title": "sweaters",
         "name": "sweaters"
@@ -30,8 +29,7 @@
             "car1.JPG",
             "car2.JPG",
             "car3.JPG",
-            "car4.JPG",
-            "car5.JPG"
+            "car4.JPG"
         ],
         "title": "cardigans",
         "name": "cardigans"
@@ -42,11 +40,7 @@
             "co1.jpg",
             "co2.jpg",
             "co3.jpg",
-            "co4.jpg",
-            "co5.jpg",
-            "co6.jpg",
-            "co7.jpg",
-            "co8.jpg"
+            "co4.jpg"
         ],
         "title": "coats",
         "name": "coats"
@@ -65,7 +59,26 @@
         "id": 6,
         "pictures":[
             "p1.JPG",
-            "p2.JPG"
+            "p2.JPG",
+            "p3.jpg",
+            "p4.jpg",
+            "p5.jpg",
+            "p6.jpg",
+            "p7.jpg",
+            "p8.jpg",
+            "p9.jpg",
+            "p10.jpg",
+            "p11.jpg",
+            "p12.jpg",
+            "p13.jpg",
+            "p14.jpg",
+            "p15.jpg",
+            "p16.jpg",
+            "p17.jpg",
+            "p18.jpg",
+            "p19.jpg",
+            "p20.jpg",
+            "p21.jpg"
         ],
         "title": "panchos",
         "name": "panchos"
@@ -108,8 +121,16 @@
     {
         "id": 10,
         "pictures":[
-            "g1.jpg",
-            "g2.jpg"
+            "gi1.jpg",
+            "gi2.jpg",
+            "gi3.jpg",
+            "gi4.jpg",
+            "gi5.jpg",
+            "gi6.jpg",
+            "gi7.jpg",
+            "gi8.jpg",
+            "gi9.jpg",
+            "gi10.jpg"
         ],
         "title": "gilets",
         "name": "gilets"

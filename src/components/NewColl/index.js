@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from '../../styled';
-import newcollection from '../../assets/images/newcollection.jpg';
+import newcollection from '../../assets/images/collectionnew.jpg';
 
 function NewColl(){
     return(

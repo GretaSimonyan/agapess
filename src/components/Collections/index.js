@@ -13,6 +13,7 @@ import p3 from '../../assets/images/col3.jpg';
 import p4 from '../../assets/images/col4.jpg';
 import p5 from '../../assets/images/col5.jpg';
 import p6 from '../../assets/images/col6.jpg';
+import p7 from '../../assets/images/col7.jpg';
 import p8 from '../../assets/images/col8.jpg';
 import p9 from '../../assets/images/col9.jpg';
 import p10 from '../../assets/images/col10.jpg';
@@ -51,6 +52,11 @@ class Collections extends React.Component{
                     id: 9,
                     src: p9,
                     title: "dresses",
+                },
+                {
+                    id: 7,
+                    src: p7,
+                    title: "sets",
                 },
                 {
                     id: 3,
