@@ -10,7 +10,7 @@ function Info(){
     return(
         <View flex 
             fD='row'
-            p='20px 0' 
+            p='30px 0' 
             bgImg={tel} 
             bgPos='left' 
             justC='center' 
@@ -21,6 +21,7 @@ function Info(){
             bgSize='contain' 
             bgSize_m='contain' 
             bgSize_s='contain' 
+            minH='300px'
         >
             <LightSpeed left cascade>
                 <View flex 
@@ -31,11 +32,15 @@ function Info(){
                     bRad='8px' 
                     c_m='white'
                     c_s='white'
+                    c_l='rgb(70,70,70)'
+                    c='rgb(70,70,70)'
+                    c_xl='rgb(70,70,70)'
                     bgColor_m='rgba(0,0,0,0.5)' 
                     bgColor_s='rgba(0,0,0,0.5)' 
-                    >
+                    m='0 auto'
+                >
                     <View w='50%' w_m='100%' w_s='100%' p='15px'>
-                        <Text fontSize='14px' lh='1.65'>
+                        <Text fontSize='14px' lh='1.65' tAlign='justify'>
                             If you want to have the best kintted outfit that is unique and different from another knitted clothes, you have to 
                             wear Studios 21. Our products are unique and one of a kind, one another is a unique piece of art. Who want to act 
                             different has to wear our knitted clothes. Do not hesitate to contact us and get your unique masterpiece. Hope 

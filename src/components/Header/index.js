@@ -22,10 +22,12 @@ const Link = styled.a`
     text-decoration: none;
     letter-spacing: 3px;
     ${ (props) => props.headerType === 2 && `color: white` }
+    transition: .2s;
     &:hover{
-        border-radius: 27px;
-        box-shadow: -1px -3px 10px 3px #f8f8f866;
-        background: linear-gradient(341deg,rgba(255,13,13,0.42) 8%,rgba(235,0,0,0.78) 44%,rgba(255,104,104,0.09) 86%);
+        text-shadow: 2px 2px 4px rgba(0,0,0,.4);
+        // border-radius: 27px;
+        // box-shadow: -1px -3px 10px 3px #f8f8f866;
+        // background: linear-gradient(341deg,rgba(255,13,13,0.42) 8%,rgba(235,0,0,0.78) 44%,rgba(255,104,104,0.09) 86%);
     }
 `;
 
