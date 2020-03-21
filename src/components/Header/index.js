@@ -85,8 +85,8 @@ class Header extends React.Component{
                         <View>
                             <NavLink to='/'>
                                 <View onClick={this.scrollHome}
-                                    h='45px'
-                                    w='110px'
+                                    h='40px'
+                                    w='105px'
                                     bgPos='center'
                                     bgSize='contain'
                                     bgRep='no-repeat'

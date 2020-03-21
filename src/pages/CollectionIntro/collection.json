@@ -40,7 +40,9 @@
             "co1.jpg",
             "co2.jpg",
             "co3.jpg",
-            "co4.jpg"
+            "co4.jpg",
+            "co5.jpg",
+            "co6.jpg"
         ],
         "title": "coats",
         "name": "coats"
@@ -113,7 +115,8 @@
             "sh5.JPG",
             "sh6.JPG",
             "sh7.JPG",
-            "sh8.JPG"
+            "sh8.JPG",
+            "sh9.jpg"
         ],
         "title": "scarfs-shawls",
         "name": "scarfs"
